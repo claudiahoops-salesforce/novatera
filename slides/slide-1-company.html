@@ -1,42 +1,43 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{width:1280px;height:720px;overflow:hidden;font-family:'Inter',sans-serif;background:#1d1d1b;color:#fff;}
-.slide{width:1280px;height:720px;display:grid;grid-template-columns:520px 1fr;position:relative;}
-.left{background:#1d1d1b;padding:72px 64px;display:flex;flex-direction:column;justify-content:center;}
-.right{background:#111;display:flex;flex-direction:column;justify-content:center;padding:64px 56px;gap:32px;}
-.logo{font-size:28px;font-weight:800;color:#fff;letter-spacing:-0.5px;margin-bottom:40px;}
-.logo span{color:#e4003a;}
-.eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#e4003a;margin-bottom:16px;}
-h1{font-size:46px;font-weight:800;line-height:1.05;letter-spacing:-2px;color:#fff;}
-.sub{font-size:15px;color:rgba(255,255,255,0.55);margin-top:20px;line-height:1.7;max-width:380px;}
-.stat-row{display:flex;gap:20px;}
-.stat{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:20px 24px;flex:1;}
-.stat-num{font-size:34px;font-weight:800;color:#e4003a;letter-spacing:-1.5px;}
-.stat-desc{font-size:12px;color:rgba(255,255,255,0.4);margin-top:4px;line-height:1.4;}
-.tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
-.tag{background:rgba(228,0,58,0.12);border:1px solid rgba(228,0,58,0.25);color:#ff6b8a;font-size:12px;font-weight:600;padding:5px 12px;border-radius:100px;}
-.slide-num{position:absolute;bottom:28px;right:40px;font-size:12px;color:rgba(255,255,255,0.2);font-weight:600;}
+body{width:1280px;height:720px;overflow:hidden;font-family:'Inter',sans-serif;background:#003057;color:#fff;}
+.slide{width:1280px;height:720px;display:grid;grid-template-columns:500px 1fr;position:relative;}
+.left{background:#003057;padding:72px 64px;display:flex;flex-direction:column;justify-content:center;}
+.right{background:#f7f7f5;display:flex;flex-direction:column;justify-content:center;padding:64px 56px;gap:28px;}
+.logo{font-size:24px;font-weight:800;color:#fff;letter-spacing:-0.5px;margin-bottom:48px;}
+.logo span{color:#5fa8d3;}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px;}
+h1{font-size:44px;font-weight:700;line-height:1.08;letter-spacing:-1.5px;color:#fff;}
+.sub{font-size:14px;color:rgba(255,255,255,0.5);margin-top:20px;line-height:1.75;max-width:360px;}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.stat{background:#fff;border:1px solid #dddbd7;padding:20px 22px;}
+.stat-num{font-size:30px;font-weight:800;color:#003057;letter-spacing:-1px;line-height:1;}
+.stat-desc{font-size:11px;color:#888683;margin-top:5px;line-height:1.4;}
+.tag-list{display:flex;flex-wrap:wrap;gap:6px;}
+.tag{background:rgba(0,48,87,0.07);border:1px solid rgba(0,48,87,0.15);color:#003057;font-size:11px;font-weight:600;padding:4px 10px;}
+.addr{font-size:12px;color:#9a9896;letter-spacing:0.5px;}
+.slide-num{position:absolute;bottom:24px;right:36px;font-size:11px;color:rgba(0,0,0,0.18);font-weight:600;}
 </style></head><body>
 <div class="slide">
   <div class="left">
     <div class="logo">Nova<span>Terra</span></div>
     <div class="eyebrow">Company Overview</div>
     <h1>Engineering excellence<br/>since 1987.</h1>
-    <p class="sub">NovaTerra builds precision laser cutting, bending and welding machines — and the AI software that keeps them running at peak performance. Headquartered in Stuttgart, Germany.</p>
+    <p class="sub">NovaTerra designs and manufactures precision laser cutting, bending and welding machines — and the industrial software that connects them. Headquartered in Stuttgart, Germany.</p>
   </div>
   <div class="right">
     <div class="stat-row">
-      <div class="stat"><div class="stat-num">1987</div><div class="stat-desc">Founded Stuttgart, Germany</div></div>
+      <div class="stat"><div class="stat-num">1987</div><div class="stat-desc">Founded in Stuttgart, Germany</div></div>
       <div class="stat"><div class="stat-num">4,200+</div><div class="stat-desc">Machines installed worldwide</div></div>
     </div>
     <div class="stat-row">
       <div class="stat"><div class="stat-num">38</div><div class="stat-desc">Countries with active customers</div></div>
-      <div class="stat"><div class="stat-num">18%</div><div class="stat-desc">Revenue invested in R&D</div></div>
+      <div class="stat"><div class="stat-num">18%</div><div class="stat-desc">Revenue invested in R&amp;D annually</div></div>
     </div>
     <div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:12px;letter-spacing:1px;text-transform:uppercase;">Industries Served</div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#9a9896;margin-bottom:10px;">Industries served</div>
       <div class="tag-list">
         <span class="tag">Automotive</span>
         <span class="tag">Aerospace</span>
@@ -45,7 +46,7 @@ h1{font-size:46px;font-weight:800;line-height:1.05;letter-spacing:-2px;color:#ff
         <span class="tag">Energy</span>
       </div>
     </div>
-    <div style="font-size:13px;color:rgba(255,255,255,0.3);">Stuttgart · Munich · London · Chicago</div>
+    <div class="addr">Stuttgart · Munich · London · Chicago</div>
   </div>
   <div class="slide-num">1 / 7</div>
 </div>

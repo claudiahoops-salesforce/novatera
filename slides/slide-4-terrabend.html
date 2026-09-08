@@ -1,27 +1,30 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{width:1280px;height:720px;overflow:hidden;font-family:'Inter',sans-serif;background:#f2f2f0;}
-.slide{width:1280px;height:720px;display:grid;grid-template-columns:480px 1fr;position:relative;}
-.left{background:#1d1d1b;padding:48px 40px;display:flex;flex-direction:column;gap:0;}
+body{width:1280px;height:720px;overflow:hidden;font-family:'Inter',sans-serif;background:#f0f0ee;}
+.slide{width:1280px;height:720px;display:grid;grid-template-columns:460px 1fr;position:relative;}
+.left{background:#1a2230;padding:48px 40px;display:flex;flex-direction:column;}
 .right{padding:72px 64px;display:flex;flex-direction:column;justify-content:center;}
-.eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#e4003a;margin-bottom:12px;}
-h2{font-size:46px;font-weight:800;line-height:1.05;letter-spacing:-2px;color:#1d1d1b;margin-bottom:16px;}
-.tagline{font-size:16px;color:#6e6e6e;margin-bottom:28px;line-height:1.6;}
-.feature-list{display:flex;flex-direction:column;gap:12px;}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#005a9e;margin-bottom:12px;}
+h2{font-size:44px;font-weight:700;line-height:1.05;letter-spacing:-1.5px;color:#1a1a18;margin-bottom:16px;}
+.tagline{font-size:15px;color:#5a5a57;margin-bottom:28px;line-height:1.65;}
+.feature-list{display:flex;flex-direction:column;gap:11px;}
 .feat{display:flex;gap:12px;align-items:flex-start;}
-.feat-dot{width:6px;height:6px;border-radius:50%;background:#e4003a;flex-shrink:0;margin-top:6px;}
-.feat-text{font-size:14px;color:#4a4a4a;line-height:1.5;}
-.feat-text strong{color:#1d1d1b;}
-.spec-header{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:20px;}
-.spec-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);}
-.spec-label{font-size:12px;color:rgba(255,255,255,0.4);}
-.spec-val{font-size:14px;font-weight:700;color:#fff;}
-.ai-badge{background:rgba(228,0,58,0.12);border:1px solid rgba(228,0,58,0.25);border-radius:6px;padding:16px 20px;margin-top:28px;}
-.ai-title{font-size:13px;font-weight:700;color:#e4003a;}
-.ai-desc{font-size:13px;color:#6e6e6e;margin-top:4px;line-height:1.5;}
-.slide-num{position:absolute;bottom:28px;right:40px;font-size:12px;color:rgba(0,0,0,0.2);font-weight:600;}
+.feat-bar{width:2px;background:#003057;flex-shrink:0;min-height:18px;}
+.feat-text{font-size:13px;color:#4a4a47;line-height:1.55;}
+.feat-text strong{color:#1a1a18;}
+.spec-header{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:18px;}
+.spec-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.spec-label{font-size:11px;color:rgba(255,255,255,0.35);}
+.spec-val{font-size:13px;font-weight:600;color:#fff;}
+.kpi-band{background:#003057;padding:18px 40px;margin:-48px -40px -48px;margin-top:auto;display:flex;justify-content:space-between;align-items:center;}
+.kpi-num{font-size:26px;font-weight:800;color:#fff;letter-spacing:-1px;}
+.kpi-label{font-size:10px;color:rgba(255,255,255,0.5);margin-top:3px;}
+.ai-note{background:#fff;border:1px solid #d6d4cf;border-left:2px solid #003057;padding:16px 18px;margin-top:28px;}
+.ai-title{font-size:12px;font-weight:700;color:#003057;}
+.ai-desc{font-size:12px;color:#5a5a57;margin-top:4px;line-height:1.5;}
+.slide-num{position:absolute;bottom:24px;right:36px;font-size:11px;color:rgba(0,0,0,0.15);font-weight:600;}
 </style></head><body>
 <div class="slide">
   <div class="left">
@@ -33,25 +36,24 @@ h2{font-size:46px;font-weight:800;line-height:1.05;letter-spacing:-2px;color:#1d
     <div class="spec-row"><span class="spec-label">Angle accuracy</span><span class="spec-val">±0.1°</span></div>
     <div class="spec-row"><span class="spec-label">Tool magazine</span><span class="spec-val">8 stations</span></div>
     <div class="spec-row"><span class="spec-label">Tool changeover</span><span class="spec-val">45 seconds</span></div>
-    <div class="spec-row" style="border:none;"><span class="spec-label">Warranty</span><span class="spec-val">2 years</span></div>
-    <div style="flex:1;"></div>
-    <div style="background:#e4003a;padding:18px 20px;margin:-48px -40px -48px;margin-top:0;">
-      <div style="font-size:22px;font-weight:800;color:#fff;">45 sec</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:3px;">tool changeover (MedForm AG: was 4 hours)</div>
+    <div class="spec-row" style="border:none;"><span class="spec-label">Performance warranty</span><span class="spec-val">2 years</span></div>
+    <div class="kpi-band">
+      <div><div class="kpi-num">45 sec</div><div class="kpi-label">tool changeover time</div></div>
+      <div><div class="kpi-num">was 4 h</div><div class="kpi-label">at MedForm AG before</div></div>
     </div>
   </div>
   <div class="right">
-    <div class="eyebrow">TerraBend 5000 · CNC Press Brake</div>
+    <div class="eyebrow">TerraBend 5000 — CNC Press Brake</div>
     <h2>AI-assisted bending.<br/>First part correct.</h2>
-    <p class="tagline">320 t press force. Automatic tool change. AI springback compensation. No test bends, ever.</p>
+    <p class="tagline">320 t press force. Automatic tool change. AI springback compensation.<br/>No test bends — ever.</p>
     <div class="feature-list">
-      <div class="feat"><div class="feat-dot"></div><div class="feat-text"><strong>AI springback compensation</strong> — adapts automatically to material batch variation</div></div>
-      <div class="feat"><div class="feat-dot"></div><div class="feat-text"><strong>8-station tool magazine</strong> — automatic change in 45 seconds</div></div>
-      <div class="feat"><div class="feat-dot"></div><div class="feat-text"><strong>BendAssist offline programming</strong> — import from any CAD system</div></div>
-      <div class="feat"><div class="feat-dot"></div><div class="feat-text"><strong>MaintainAI integration</strong> — hydraulic pressure monitoring, seal wear prediction</div></div>
+      <div class="feat"><div class="feat-bar"></div><div class="feat-text"><strong>AI springback compensation</strong> — adapts automatically to material batch variation</div></div>
+      <div class="feat"><div class="feat-bar"></div><div class="feat-text"><strong>8-station tool magazine</strong> — automatic change in 45 seconds</div></div>
+      <div class="feat"><div class="feat-bar"></div><div class="feat-text"><strong>BendAssist offline programming</strong> — import from any CAD system</div></div>
+      <div class="feat"><div class="feat-bar"></div><div class="feat-text"><strong>MaintainAI integration</strong> — hydraulic pressure monitoring, seal wear prediction</div></div>
     </div>
-    <div class="ai-badge">
-      <div class="ai-title">🤖 AI Springback Compensation</div>
+    <div class="ai-note">
+      <div class="ai-title">AI Springback Compensation</div>
       <div class="ai-desc">The TerraBend learns each material's springback behaviour in real time — eliminating the need for test bends even on new material batches. First-part-correct, every time.</div>
     </div>
   </div>
