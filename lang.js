@@ -6,6 +6,10 @@ const translations = {
     nav_stories: "Success Stories", nav_about: "Company",
     nav_contact: "Contact", nav_demo: "Request Demo",
 
+    banner_label: "Precision Manufacturing",
+    banner_heading: "Built in Stuttgart.<br/>Running in 38 countries.",
+    banner_sub: "4,200 machines in automotive plants, aerospace facilities and medical factories worldwide — all connected to the NovaTerra Smart Factory platform.",
+
     hero_eyebrow: "NEW — TerraLaser 3060 fiber · 12 kW",
     hero_h1: "Machines that cut.<br/>Software that thinks.",
     hero_sub: "NovaTerra builds the industrial machines that shape the world's most demanding parts — and the AI platform that keeps them running at peak performance.",
@@ -185,6 +189,10 @@ const translations = {
     nav_machines: "Maschinen & Systeme", nav_software: "Smart Factory",
     nav_stories: "Erfolgsgeschichten", nav_about: "Unternehmen",
     nav_contact: "Kontakt", nav_demo: "Demo anfragen",
+
+    banner_label: "Präzisionsfertigung",
+    banner_heading: "Entwickelt in Stuttgart.<br/>Im Einsatz in 38 Ländern.",
+    banner_sub: "4.200 Maschinen in Automobilfabriken, Luft- und Raumfahrtbetrieben und Medizintechnikunternehmen weltweit — alle verbunden mit der NovaTerra Smart-Factory-Plattform.",
 
     hero_eyebrow: "NEU — TerraLaser 3060 Faser · 12 kW",
     hero_h1: "Maschinen, die schneiden.<br/>Software, die denkt.",
