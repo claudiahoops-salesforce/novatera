@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaTerra — Industrial Intelligence Platform</title>
+  <meta name="description" content="NovaTerra connects your factory floor to your business layer — real-time asset visibility, AI-driven maintenance, zero unplanned downtime." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Nova<span>Terra</span></a>
+      <ul class="nav-links">
+        <li><a href="assetiq.html" data-i18n="nav_assetiq">AssetIQ</a></li>
+        <li><a href="maintainai.html" data-i18n="nav_maintainai">MaintainAI</a></li>
+        <li><a href="#customers" data-i18n="nav_customers">Customers</a></li>
+        <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-cta">
+        <div class="lang-toggle">
+          <button data-lang="en" class="active">EN</button>
+          <button data-lang="de">DE</button>
+        </div>
+        <a href="#" class="btn-ghost" data-i18n="nav_login">Log in</a>
+        <a href="#demo" class="btn-primary" data-i18n="nav_demo">Get a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-badge" data-i18n="hero_badge">Trusted by 400+ industrial enterprises</div>
+    <h1 data-i18n="hero_h1">Your machines are talking.<br />Are you listening?</h1>
+    <p class="hero-sub" data-i18n="hero_sub">NovaTerra connects your factory floor to your business layer — real-time asset visibility, AI-driven maintenance, and zero unplanned downtime.</p>
+    <div class="hero-actions">
+      <a href="#demo" class="btn-primary btn-lg" data-i18n="hero_cta1">Book a Demo</a>
+      <a href="#products" class="btn-ghost btn-lg" data-i18n="hero_cta2">See the Platform →</a>
+    </div>
+    <div class="hero-img">
+      <div class="dashboard-mock">
+        <div class="mock-header">
+          <span class="mock-dot red"></span>
+          <span class="mock-dot yellow"></span>
+          <span class="mock-dot green"></span>
+          <span class="mock-title">NovaTerra Live Dashboard</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-stat">
+            <div class="stat-value green-text">98.7%</div>
+            <div class="stat-label">Overall Equipment Effectiveness</div>
+          </div>
+          <div class="mock-stat">
+            <div class="stat-value blue-text">0</div>
+            <div class="stat-label">Unplanned Downtime Events (30d)</div>
+          </div>
+          <div class="mock-stat">
+            <div class="stat-value orange-text">3</div>
+            <div class="stat-label">Maintenance Alerts Active</div>
+          </div>
+          <div class="mock-bar-row">
+            <div class="mock-bar-label">Line A — TruBend 5000</div>
+            <div class="mock-bar"><div class="mock-bar-fill" style="width:94%"></div></div>
+            <div class="mock-bar-pct">94%</div>
+          </div>
+          <div class="mock-bar-row">
+            <div class="mock-bar-label">Line B — TruLaser 5030</div>
+            <div class="mock-bar"><div class="mock-bar-fill" style="width:88%"></div></div>
+            <div class="mock-bar-pct">88%</div>
+          </div>
+          <div class="mock-bar-row">
+            <div class="mock-bar-label">Line C — TruPunch 5000</div>
+            <div class="mock-bar"><div class="mock-bar-fill warning" style="width:61%"></div></div>
+            <div class="mock-bar-pct warn-text">61%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logos" id="customers">
+    <p class="logos-label" data-i18n="logos_label">Powering operations at</p>
+    <div class="logos-row">
+      <span class="logo-item">Nexora Industrial</span>
+      <span class="logo-item">PrecisionMetal AG</span>
+      <span class="logo-item">DataCore Systems</span>
+      <span class="logo-item">RackForge BV</span>
+      <span class="logo-item">Voltex Manufacturing</span>
+      <span class="logo-item">IronPath Group</span>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-text">
+          <h2 data-i18n="problem_h2">Unplanned downtime costs manufacturers <span class='highlight'>$260,000 per hour.</span></h2>
+          <p data-i18n="problem_p1">Most factories still rely on reactive maintenance and disconnected systems. Your engineers are firefighting instead of optimizing. Your CFO is writing checks instead of reinvesting.</p>
+          <p data-i18n="problem_p2">NovaTerra changes the equation — with a platform that monitors every asset, predicts every failure, and gives your team the intelligence to act before anything breaks.</p>
+          <a href="#products" class="btn-primary" data-i18n="problem_cta">See How It Works →</a>
+        </div>
+        <div class="problem-stats">
+          <div class="pstat">
+            <div class="pstat-num" data-i18n="pstat1_num">23%</div>
+            <div class="pstat-desc" data-i18n="pstat1_desc">average reduction in maintenance costs within 6 months</div>
+          </div>
+          <div class="pstat">
+            <div class="pstat-num" data-i18n="pstat2_num">4.1x</div>
+            <div class="pstat-desc" data-i18n="pstat2_desc">ROI reported by customers in year one</div>
+          </div>
+          <div class="pstat">
+            <div class="pstat-num" data-i18n="pstat3_num">99.2%</div>
+            <div class="pstat-desc" data-i18n="pstat3_desc">uptime achieved across NovaTerra-monitored assets</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-label" data-i18n="products_label">The Platform</div>
+      <h2 data-i18n="products_h2">Two products. One connected factory.</h2>
+      <div class="product-cards">
+        <a href="assetiq.html" class="product-card">
+          <div class="product-icon">📡</div>
+          <h3 data-i18n="product1_title">AssetIQ</h3>
+          <p data-i18n="product1_desc">Real-time health monitoring for every machine on your floor.</p>
+          <ul>
+            <li data-i18n="product1_li1">Live sensor dashboards</li>
+            <li data-i18n="product1_li2">Anomaly detection with AI</li>
+            <li data-i18n="product1_li3">OEE tracking per asset</li>
+            <li data-i18n="product1_li4">Instant alert routing</li>
+          </ul>
+          <span class="card-link" data-i18n="product1_link">Explore AssetIQ →</span>
+        </a>
+        <a href="maintainai.html" class="product-card">
+          <div class="product-icon">🔧</div>
+          <h3 data-i18n="product2_title">MaintainAI</h3>
+          <p data-i18n="product2_desc">Predictive maintenance scheduling powered by machine learning.</p>
+          <ul>
+            <li data-i18n="product2_li1">Failure prediction (7–30 day horizon)</li>
+            <li data-i18n="product2_li2">Automated work order creation</li>
+            <li data-i18n="product2_li3">Parts & technician scheduling</li>
+            <li data-i18n="product2_li4">Salesforce & SAP integration</li>
+          </ul>
+          <span class="card-link" data-i18n="product2_link">Explore MaintainAI →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="container">
+      <blockquote data-i18n="testimonial_quote">"Before NovaTerra, we had three major line stoppages a quarter. In the 18 months since go-live, we've had zero. The ROI conversation with our CFO took about 90 seconds."</blockquote>
+      <cite data-i18n="testimonial_cite">— Markus Berger, Production Manager, PrecisionMetal AG</cite>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label" data-i18n="pricing_label">Pricing</div>
+      <h2 data-i18n="pricing_h2">Simple, scalable pricing.</h2>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="plan-name" data-i18n="plan1_name">Starter</div>
+          <div class="plan-price"><span data-i18n="plan1_price">$1,200</span><span data-i18n="plan1_period">/mo</span></div>
+          <div class="plan-desc" data-i18n="plan1_desc">Up to 25 assets, 2 sites</div>
+          <ul>
+            <li data-i18n="plan1_li1">AssetIQ monitoring</li>
+            <li data-i18n="plan1_li2">Email & Slack alerts</li>
+            <li data-i18n="plan1_li3">Standard dashboards</li>
+            <li data-i18n="plan1_li4">Community support</li>
+          </ul>
+          <a href="#demo" class="btn-ghost" data-i18n="plan1_cta">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="plan-badge" data-i18n="plan2_badge">Most Popular</div>
+          <div class="plan-name" data-i18n="plan2_name">Growth</div>
+          <div class="plan-price"><span data-i18n="plan2_price">$3,800</span><span data-i18n="plan2_period">/mo</span></div>
+          <div class="plan-desc" data-i18n="plan2_desc">Up to 100 assets, 5 sites</div>
+          <ul>
+            <li data-i18n="plan2_li1">AssetIQ + MaintainAI</li>
+            <li data-i18n="plan2_li2">Predictive failure alerts</li>
+            <li data-i18n="plan2_li3">Salesforce / SAP integration</li>
+            <li data-i18n="plan2_li4">Dedicated CSM</li>
+          </ul>
+          <a href="#demo" class="btn-primary" data-i18n="plan2_cta">Book a Demo</a>
+        </div>
+        <div class="pricing-card">
+          <div class="plan-name" data-i18n="plan3_name">Enterprise</div>
+          <div class="plan-price"><span data-i18n="plan3_price">Custom</span><span data-i18n="plan3_period"></span></div>
+          <div class="plan-desc" data-i18n="plan3_desc">Unlimited assets & sites</div>
+          <ul>
+            <li data-i18n="plan3_li1">Everything in Growth</li>
+            <li data-i18n="plan3_li2">Custom AI model training</li>
+            <li data-i18n="plan3_li3">On-prem / private cloud</li>
+            <li data-i18n="plan3_li4">SLA-backed support</li>
+          </ul>
+          <a href="#demo" class="btn-ghost" data-i18n="plan3_cta">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="demo">
+    <div class="container">
+      <h2 data-i18n="cta_h2">See NovaTerra in action.</h2>
+      <p data-i18n="cta_p">30-minute live demo. No pressure. No 47-slide decks.</p>
+      <a href="#" class="btn-primary btn-lg" data-i18n="cta_btn">Book Your Demo</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Nova<span>Terra</span></a>
+          <p data-i18n="footer_tagline">Industrial intelligence for the modern factory floor.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong data-i18n="footer_products">Products</strong>
+            <a href="assetiq.html">AssetIQ</a>
+            <a href="maintainai.html">MaintainAI</a>
+          </div>
+          <div>
+            <strong data-i18n="footer_company">Company</strong>
+            <a href="#" data-i18n="footer_about">About</a>
+            <a href="#" data-i18n="footer_careers">Careers</a>
+            <a href="#" data-i18n="footer_blog">Blog</a>
+          </div>
+          <div>
+            <strong data-i18n="footer_support">Support</strong>
+            <a href="#" data-i18n="footer_docs">Documentation</a>
+            <a href="#" data-i18n="footer_status">Status</a>
+            <a href="#" data-i18n="footer_contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2025 NovaTerra Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>

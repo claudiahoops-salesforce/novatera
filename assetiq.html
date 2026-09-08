@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssetIQ — NovaTerra</title>
+  <meta name="description" content="AssetIQ gives you real-time health monitoring for every machine on your factory floor — vibration, temperature, pressure, streamed and analyzed by AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Nova<span>Terra</span></a>
+      <ul class="nav-links">
+        <li><a href="assetiq.html" data-i18n="nav_assetiq" style="color:var(--blue)">AssetIQ</a></li>
+        <li><a href="maintainai.html" data-i18n="nav_maintainai">MaintainAI</a></li>
+        <li><a href="index.html#customers" data-i18n="nav_customers">Customers</a></li>
+        <li><a href="index.html#pricing" data-i18n="nav_pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-cta">
+        <div class="lang-toggle">
+          <button data-lang="en" class="active">EN</button>
+          <button data-lang="de">DE</button>
+        </div>
+        <a href="#" class="btn-ghost" data-i18n="nav_login">Log in</a>
+        <a href="#demo" class="btn-primary" data-i18n="nav_demo">Get a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-hero">
+    <div class="product-hero-inner">
+      <div>
+        <div class="product-hero-badge">
+          <span>📡</span>
+          <span data-i18n="assetiq_badge">AssetIQ — Real-Time Monitoring</span>
+        </div>
+        <h1 data-i18n="assetiq_h1">Every machine. Every metric. In real time.</h1>
+        <p data-i18n="assetiq_sub">AssetIQ connects your sensors to a unified dashboard — giving your team instant visibility into the health, performance, and status of every asset on the floor.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="#demo" class="btn-primary btn-lg" data-i18n="assetiq_cta1">Book a Demo</a>
+          <a href="maintainai.html" class="btn-ghost btn-lg" data-i18n="assetiq_cta2">See MaintainAI →</a>
+        </div>
+      </div>
+      <div class="product-hero-visual">
+        <div class="sensor-row">
+          <div class="sensor-icon">🌡️</div>
+          <div class="sensor-info">
+            <div class="sensor-name">TruBend 5000 — Spindle Temp</div>
+            <div class="sensor-val">72.4 °C — updated 0.1s ago</div>
+          </div>
+          <span class="sensor-status status-ok">Normal</span>
+        </div>
+        <div class="sensor-row">
+          <div class="sensor-icon">📳</div>
+          <div class="sensor-info">
+            <div class="sensor-name">TruLaser 5030 — Vibration Z</div>
+            <div class="sensor-val">4.2 mm/s RMS — updated 0.1s ago</div>
+          </div>
+          <span class="sensor-status status-warn">Elevated</span>
+        </div>
+        <div class="sensor-row">
+          <div class="sensor-icon">⚡</div>
+          <div class="sensor-info">
+            <div class="sensor-name">TruPunch 5000 — Motor Current</div>
+            <div class="sensor-val">38.1 A — updated 0.1s ago</div>
+          </div>
+          <span class="sensor-status status-ok">Normal</span>
+        </div>
+        <div class="sensor-row">
+          <div class="sensor-icon">💧</div>
+          <div class="sensor-info">
+            <div class="sensor-name">Hydraulic Press Line C — Pressure</div>
+            <div class="sensor-val">187 bar — updated 0.1s ago</div>
+          </div>
+          <span class="sensor-status status-crit">Alert</span>
+        </div>
+        <div style="background:#0f172a;border-radius:10px;padding:14px 18px;">
+          <div style="font-size:12px;color:#64748b;margin-bottom:10px;font-weight:600;">OEE — Last 7 days</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <span style="font-size:11px;color:#94a3b8;width:80px;">Availability</span>
+              <div style="flex:1;background:#1e3a5f;border-radius:4px;height:6px;"><div style="background:#10b981;width:96%;height:6px;border-radius:4px;"></div></div>
+              <span style="font-size:11px;color:#10b981;font-weight:700;">96%</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;">
+              <span style="font-size:11px;color:#94a3b8;width:80px;">Performance</span>
+              <div style="flex:1;background:#1e3a5f;border-radius:4px;height:6px;"><div style="background:#3b82f6;width:91%;height:6px;border-radius:4px;"></div></div>
+              <span style="font-size:11px;color:#3b82f6;font-weight:700;">91%</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;">
+              <span style="font-size:11px;color:#94a3b8;width:80px;">Quality</span>
+              <div style="flex:1;background:#1e3a5f;border-radius:4px;height:6px;"><div style="background:#06b6d4;width:99%;height:6px;border-radius:4px;"></div></div>
+              <span style="font-size:11px;color:#06b6d4;font-weight:700;">99%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roi-strip">
+    <div class="roi-inner">
+      <div>
+        <div class="roi-num" data-i18n="assetiq_roi1_num">40ms</div>
+        <div class="roi-desc" data-i18n="assetiq_roi1_desc">average alert latency</div>
+      </div>
+      <div>
+        <div class="roi-num" data-i18n="assetiq_roi2_num">99.9%</div>
+        <div class="roi-desc" data-i18n="assetiq_roi2_desc">platform uptime SLA</div>
+      </div>
+      <div>
+        <div class="roi-num" data-i18n="assetiq_roi3_num">2 weeks</div>
+        <div class="roi-desc" data-i18n="assetiq_roi3_desc">typical time to first value</div>
+      </div>
+      <div>
+        <div class="roi-num" data-i18n="assetiq_roi4_num">500+</div>
+        <div class="roi-desc" data-i18n="assetiq_roi4_desc">sensor types supported</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="section-label" data-i18n="assetiq_features_label">Features</div>
+      <h2 data-i18n="assetiq_features_h2">Built for the factory floor.</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📡</div>
+          <h4 data-i18n="assetiq_f1_title">Live Sensor Streams</h4>
+          <p data-i18n="assetiq_f1_desc">Connect vibration, temperature, pressure, and current sensors via MQTT, OPC-UA, or Modbus. Data refreshes every 100ms.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h4 data-i18n="assetiq_f2_title">AI Anomaly Detection</h4>
+          <p data-i18n="assetiq_f2_desc">Our models learn your machine's normal behavior and flag deviations before they become failures — with explainable alerts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h4 data-i18n="assetiq_f3_title">OEE Tracking</h4>
+          <p data-i18n="assetiq_f3_desc">Availability, Performance, Quality — tracked per asset, per shift, per line. Drill from plant-wide to individual machine in two clicks.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h4 data-i18n="assetiq_f4_title">Instant Alert Routing</h4>
+          <p data-i18n="assetiq_f4_desc">Route alerts to the right person via Slack, Teams, SMS, or email — with escalation rules and on-call schedules built in.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎛️</div>
+          <h4 data-i18n="assetiq_f5_title">Custom Dashboards</h4>
+          <p data-i18n="assetiq_f5_desc">Drag-and-drop dashboard builder. Share plant-wide KPIs with leadership and deep-dive views with your engineers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🕓</div>
+          <h4 data-i18n="assetiq_f6_title">Historical Analysis</h4>
+          <p data-i18n="assetiq_f6_desc">12 months of raw sensor data retained. Replay any event, compare shifts, and build your own reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="integrations">
+    <div class="container">
+      <h2 data-i18n="assetiq_integrations_h2">Connects to your stack.</h2>
+      <div class="integration-logos">
+        <div class="integration-logo">Salesforce</div>
+        <div class="integration-logo">SAP</div>
+        <div class="integration-logo">Microsoft Teams</div>
+        <div class="integration-logo">Slack</div>
+        <div class="integration-logo">OPC-UA</div>
+        <div class="integration-logo">MQTT</div>
+        <div class="integration-logo">Modbus</div>
+        <div class="integration-logo">REST API</div>
+        <div class="integration-logo">Siemens MindSphere</div>
+        <div class="integration-logo">Azure IoT Hub</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="container">
+      <blockquote data-i18n="testimonial_quote">"Before NovaTerra, we had three major line stoppages a quarter. In the 18 months since go-live, we've had zero. The ROI conversation with our CFO took about 90 seconds."</blockquote>
+      <cite data-i18n="testimonial_cite">— Markus Berger, Production Manager, PrecisionMetal AG</cite>
+    </div>
+  </section>
+
+  <section class="cta-section" id="demo">
+    <div class="container">
+      <h2 data-i18n="cta_h2">See NovaTerra in action.</h2>
+      <p data-i18n="cta_p">30-minute live demo. No pressure. No 47-slide decks.</p>
+      <a href="#" class="btn-primary btn-lg" data-i18n="cta_btn">Book Your Demo</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Nova<span>Terra</span></a>
+          <p data-i18n="footer_tagline">Industrial intelligence for the modern factory floor.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong data-i18n="footer_products">Products</strong>
+            <a href="assetiq.html">AssetIQ</a>
+            <a href="maintainai.html">MaintainAI</a>
+          </div>
+          <div>
+            <strong data-i18n="footer_company">Company</strong>
+            <a href="#" data-i18n="footer_about">About</a>
+            <a href="#" data-i18n="footer_careers">Careers</a>
+            <a href="#" data-i18n="footer_blog">Blog</a>
+          </div>
+          <div>
+            <strong data-i18n="footer_support">Support</strong>
+            <a href="#" data-i18n="footer_docs">Documentation</a>
+            <a href="#" data-i18n="footer_status">Status</a>
+            <a href="#" data-i18n="footer_contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2025 NovaTerra Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>

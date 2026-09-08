@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaintainAI — NovaTerra</title>
+  <meta name="description" content="MaintainAI uses machine learning to forecast equipment failures up to 30 days in advance — automatically scheduling maintenance before anything breaks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Nova<span>Terra</span></a>
+      <ul class="nav-links">
+        <li><a href="assetiq.html" data-i18n="nav_assetiq">AssetIQ</a></li>
+        <li><a href="maintainai.html" data-i18n="nav_maintainai" style="color:var(--blue)">MaintainAI</a></li>
+        <li><a href="index.html#customers" data-i18n="nav_customers">Customers</a></li>
+        <li><a href="index.html#pricing" data-i18n="nav_pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-cta">
+        <div class="lang-toggle">
+          <button data-lang="en" class="active">EN</button>
+          <button data-lang="de">DE</button>
+        </div>
+        <a href="#" class="btn-ghost" data-i18n="nav_login">Log in</a>
+        <a href="#demo" class="btn-primary" data-i18n="nav_demo">Get a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-hero">
+    <div class="product-hero-inner">
+      <div>
+        <div class="product-hero-badge">
+          <span>🔧</span>
+          <span data-i18n="maintainai_badge">MaintainAI — Predictive Maintenance</span>
+        </div>
+        <h1 data-i18n="maintainai_h1">Stop reacting. Start predicting.</h1>
+        <p data-i18n="maintainai_sub">MaintainAI uses machine learning to forecast equipment failures up to 30 days in advance — automatically scheduling maintenance before anything breaks.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="#demo" class="btn-primary btn-lg" data-i18n="maintainai_cta1">Book a Demo</a>
+          <a href="assetiq.html" class="btn-ghost btn-lg" data-i18n="maintainai_cta2">← Back to AssetIQ</a>
+        </div>
+      </div>
+      <div class="product-hero-visual">
+        <div style="font-size:12px;color:#64748b;font-weight:600;margin-bottom:8px;">UPCOMING MAINTENANCE — AI PREDICTED</div>
+        <div class="sensor-row" style="flex-direction:column;align-items:flex-start;gap:8px;">
+          <div style="display:flex;justify-content:space-between;width:100%;align-items:center;">
+            <div>
+              <div class="sensor-name">TruBend 5000 — Hydraulic Pump</div>
+              <div class="sensor-val">Predicted failure in <strong style="color:#ef4444;">7 days</strong> · Confidence 94%</div>
+            </div>
+            <span class="sensor-status status-crit">Critical</span>
+          </div>
+          <div style="font-size:11px;color:#475569;background:#0f172a;padding:8px 12px;border-radius:6px;width:100%;">
+            ✅ Work order #WO-4821 created · Parts ordered · Technician: K. Fischer (Wed 09:00)
+          </div>
+        </div>
+        <div class="sensor-row" style="flex-direction:column;align-items:flex-start;gap:8px;">
+          <div style="display:flex;justify-content:space-between;width:100%;align-items:center;">
+            <div>
+              <div class="sensor-name">TruLaser 5030 — Cooling Fan</div>
+              <div class="sensor-val">Predicted failure in <strong style="color:#f59e0b;">14 days</strong> · Confidence 81%</div>
+            </div>
+            <span class="sensor-status status-warn">Warning</span>
+          </div>
+          <div style="font-size:11px;color:#475569;background:#0f172a;padding:8px 12px;border-radius:6px;width:100%;">
+            🕐 Awaiting parts confirmation · Scheduled: next maintenance window
+          </div>
+        </div>
+        <div class="sensor-row">
+          <div class="sensor-icon">📋</div>
+          <div class="sensor-info">
+            <div class="sensor-name">Open Work Orders</div>
+            <div class="sensor-val">4 active · 2 scheduled this week · 1 overdue</div>
+          </div>
+          <span class="sensor-status status-ok">On Track</span>
+        </div>
+        <div style="background:#0f172a;border-radius:10px;padding:14px 18px;">
+          <div style="font-size:12px;color:#64748b;margin-bottom:10px;font-weight:600;">MTBF improvement since go-live</div>
+          <div style="display:flex;align-items:flex-end;gap:6px;height:50px;">
+            <div style="background:#1e3a5f;width:20px;height:30px;border-radius:3px 3px 0 0;"></div>
+            <div style="background:#1e3a5f;width:20px;height:28px;border-radius:3px 3px 0 0;"></div>
+            <div style="background:#1e3a5f;width:20px;height:35px;border-radius:3px 3px 0 0;"></div>
+            <div style="background:#2563eb;width:20px;height:38px;border-radius:3px 3px 0 0;"></div>
+            <div style="background:#2563eb;width:20px;height:42px;border-radius:3px 3px 0 0;"></div>
+            <div style="background:#10b981;width:20px;height:50px;border-radius:3px 3px 0 0;"></div>
+            <div style="background:#10b981;width:20px;height:50px;border-radius:3px 3px 0 0;"></div>
+            <span style="font-size:11px;color:#10b981;margin-left:8px;font-weight:700;">+67% MTBF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roi-strip">
+    <div class="roi-inner">
+      <div>
+        <div class="roi-num" data-i18n="maintainai_roi1_num">60%</div>
+        <div class="roi-desc" data-i18n="maintainai_roi1_desc">reduction in emergency parts procurement</div>
+      </div>
+      <div>
+        <div class="roi-num" data-i18n="maintainai_roi2_num">30 days</div>
+        <div class="roi-desc" data-i18n="maintainai_roi2_desc">maximum failure prediction horizon</div>
+      </div>
+      <div>
+        <div class="roi-num" data-i18n="maintainai_roi3_num">87%</div>
+        <div class="roi-desc" data-i18n="maintainai_roi3_desc">prediction accuracy (avg. across customers)</div>
+      </div>
+      <div>
+        <div class="roi-num" data-i18n="maintainai_roi4_num">23%</div>
+        <div class="roi-desc" data-i18n="maintainai_roi4_desc">average maintenance cost reduction</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <div class="section-label" data-i18n="maintainai_features_label">Features</div>
+      <h2 data-i18n="maintainai_features_h2">Maintenance intelligence, automated.</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔮</div>
+          <h4 data-i18n="maintainai_f1_title">Failure Prediction</h4>
+          <p data-i18n="maintainai_f1_desc">ML models trained on your asset history predict failures 7–30 days out — with confidence scores and recommended actions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h4 data-i18n="maintainai_f2_title">Automated Work Orders</h4>
+          <p data-i18n="maintainai_f2_desc">When a failure is predicted, MaintainAI creates a work order in your CMMS automatically — no manual ticket needed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔩</div>
+          <h4 data-i18n="maintainai_f3_title">Parts Forecasting</h4>
+          <p data-i18n="maintainai_f3_desc">Know which spare parts you'll need before you need them. Reduce emergency procurement by up to 60%.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👷</div>
+          <h4 data-i18n="maintainai_f4_title">Technician Scheduling</h4>
+          <p data-i18n="maintainai_f4_desc">Automatically match maintenance tasks to available technicians based on skills, shift patterns, and asset priority.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📁</div>
+          <h4 data-i18n="maintainai_f5_title">Maintenance History</h4>
+          <p data-i18n="maintainai_f5_desc">Full audit trail of every maintenance event, parts used, and technician actions — searchable and exportable.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h4 data-i18n="maintainai_f6_title">Continuous Learning</h4>
+          <p data-i18n="maintainai_f6_desc">Models retrain automatically as new sensor data arrives — improving prediction accuracy over time without any manual tuning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="integrations">
+    <div class="container">
+      <h2 data-i18n="assetiq_integrations_h2">Connects to your stack.</h2>
+      <div class="integration-logos">
+        <div class="integration-logo">Salesforce</div>
+        <div class="integration-logo">SAP PM</div>
+        <div class="integration-logo">IBM Maximo</div>
+        <div class="integration-logo">ServiceNow</div>
+        <div class="integration-logo">Microsoft Teams</div>
+        <div class="integration-logo">Slack</div>
+        <div class="integration-logo">SAP ERP</div>
+        <div class="integration-logo">REST API</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="container">
+      <blockquote data-i18n="testimonial_quote">"Before NovaTerra, we had three major line stoppages a quarter. In the 18 months since go-live, we've had zero. The ROI conversation with our CFO took about 90 seconds."</blockquote>
+      <cite data-i18n="testimonial_cite">— Markus Berger, Production Manager, PrecisionMetal AG</cite>
+    </div>
+  </section>
+
+  <section class="cta-section" id="demo">
+    <div class="container">
+      <h2 data-i18n="cta_h2">See NovaTerra in action.</h2>
+      <p data-i18n="cta_p">30-minute live demo. No pressure. No 47-slide decks.</p>
+      <a href="#" class="btn-primary btn-lg" data-i18n="cta_btn">Book Your Demo</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Nova<span>Terra</span></a>
+          <p data-i18n="footer_tagline">Industrial intelligence for the modern factory floor.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong data-i18n="footer_products">Products</strong>
+            <a href="assetiq.html">AssetIQ</a>
+            <a href="maintainai.html">MaintainAI</a>
+          </div>
+          <div>
+            <strong data-i18n="footer_company">Company</strong>
+            <a href="#" data-i18n="footer_about">About</a>
+            <a href="#" data-i18n="footer_careers">Careers</a>
+            <a href="#" data-i18n="footer_blog">Blog</a>
+          </div>
+          <div>
+            <strong data-i18n="footer_support">Support</strong>
+            <a href="#" data-i18n="footer_docs">Documentation</a>
+            <a href="#" data-i18n="footer_status">Status</a>
+            <a href="#" data-i18n="footer_contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2025 NovaTerra Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>
