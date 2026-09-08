@@ -3,245 +3,312 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NovaTerra — Industrial Intelligence Platform</title>
-  <meta name="description" content="NovaTerra connects your factory floor to your business layer — real-time asset visibility, AI-driven maintenance, zero unplanned downtime." />
+  <title>NovaTerra — Precision Machines & Smart Factory Solutions</title>
+  <meta name="description" content="NovaTerra builds laser cutting, bending and welding machines — and the AI software that makes them smarter. Industrial excellence since 1987." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span>NovaTerra — Engineering excellence since 1987</span>
+    <div class="top-bar-right">
+      <a href="about.html" data-i18n="top_about">About</a>
+      <a href="piper-faq.html" data-i18n="top_support">Support</a>
+      <a href="#contact" data-i18n="top_contact">Contact</a>
+      <div class="lang-toggle" style="margin-left:8px;">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="de">DE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="logo">Nova<span>Terra</span></a>
+      <a href="index.html" class="logo">
+        Nova<span class="logo-accent">Terra</span>
+        <span class="logo-sub" data-i18n="logo_sub">Precision Machines &amp; Smart Factory</span>
+      </a>
       <ul class="nav-links">
-        <li><a href="assetiq.html" data-i18n="nav_assetiq">AssetIQ</a></li>
-        <li><a href="maintainai.html" data-i18n="nav_maintainai">MaintainAI</a></li>
-        <li><a href="#customers" data-i18n="nav_customers">Customers</a></li>
-        <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+        <li><a href="machines.html" data-i18n="nav_machines">Machines &amp; Systems</a></li>
+        <li><a href="software.html" data-i18n="nav_software">Smart Factory</a></li>
+        <li><a href="success-stories.html" data-i18n="nav_stories">Success Stories</a></li>
+        <li><a href="about.html" data-i18n="nav_about">Company</a></li>
       </ul>
-      <div class="nav-cta">
-        <div class="lang-toggle">
-          <button data-lang="en" class="active">EN</button>
-          <button data-lang="de">DE</button>
-        </div>
-        <a href="#" class="btn-ghost" data-i18n="nav_login">Log in</a>
-        <a href="#demo" class="btn-primary" data-i18n="nav_demo">Get a Demo</a>
+      <div class="nav-right">
+        <a href="#contact" class="btn-outline" data-i18n="nav_contact">Contact</a>
+        <a href="#demo" class="btn-red" data-i18n="nav_demo">Request Demo</a>
       </div>
     </div>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge" data-i18n="hero_badge">Trusted by 400+ industrial enterprises</div>
-    <h1 data-i18n="hero_h1">Your machines are talking.<br />Are you listening?</h1>
-    <p class="hero-sub" data-i18n="hero_sub">NovaTerra connects your factory floor to your business layer — real-time asset visibility, AI-driven maintenance, and zero unplanned downtime.</p>
-    <div class="hero-actions">
-      <a href="#demo" class="btn-primary btn-lg" data-i18n="hero_cta1">Book a Demo</a>
-      <a href="#products" class="btn-ghost btn-lg" data-i18n="hero_cta2">See the Platform →</a>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-i18n="hero_eyebrow">NEW — TerraLaser 3060 fiber · 12 kW</div>
+      <h1 data-i18n="hero_h1">Machines that cut.<br/>Software that thinks.</h1>
+      <p class="hero-sub" data-i18n="hero_sub">NovaTerra builds the industrial machines that shape the world's most demanding parts — and the AI platform that keeps them running at peak performance.</p>
+      <div class="hero-actions">
+        <a href="machines.html" class="btn-red lg" data-i18n="hero_cta1">Explore Machines</a>
+        <a href="#demo" class="btn-outline-white" data-i18n="hero_cta2">Request a Demo</a>
+      </div>
     </div>
-    <div class="hero-img">
-      <div class="dashboard-mock">
-        <div class="mock-header">
-          <span class="mock-dot red"></span>
-          <span class="mock-dot yellow"></span>
-          <span class="mock-dot green"></span>
-          <span class="mock-title">NovaTerra Live Dashboard</span>
-        </div>
-        <div class="mock-body">
-          <div class="mock-stat">
-            <div class="stat-value green-text">98.7%</div>
-            <div class="stat-label">Overall Equipment Effectiveness</div>
+    <div class="hero-visual">
+      <div class="hero-visual-inner">
+        <div class="machine-card-hero">
+          <div class="mch-header">
+            <span data-i18n="mch_category">Laser Cutting</span>
+            <span>● LIVE</span>
           </div>
-          <div class="mock-stat">
-            <div class="stat-value blue-text">0</div>
-            <div class="stat-label">Unplanned Downtime Events (30d)</div>
-          </div>
-          <div class="mock-stat">
-            <div class="stat-value orange-text">3</div>
-            <div class="stat-label">Maintenance Alerts Active</div>
-          </div>
-          <div class="mock-bar-row">
-            <div class="mock-bar-label">Line A — TruBend 5000</div>
-            <div class="mock-bar"><div class="mock-bar-fill" style="width:94%"></div></div>
-            <div class="mock-bar-pct">94%</div>
-          </div>
-          <div class="mock-bar-row">
-            <div class="mock-bar-label">Line B — TruLaser 5030</div>
-            <div class="mock-bar"><div class="mock-bar-fill" style="width:88%"></div></div>
-            <div class="mock-bar-pct">88%</div>
-          </div>
-          <div class="mock-bar-row">
-            <div class="mock-bar-label">Line C — TruPunch 5000</div>
-            <div class="mock-bar"><div class="mock-bar-fill warning" style="width:61%"></div></div>
-            <div class="mock-bar-pct warn-text">61%</div>
+          <div class="mch-body">
+            <div class="mch-name">TerraLaser 3060</div>
+            <div class="mch-tagline" data-i18n="mch_tagline">High-speed fiber laser · 12 kW beam source</div>
+            <div class="mch-specs">
+              <div class="mch-spec">
+                <div class="mch-spec-val">12 kW</div>
+                <div class="mch-spec-label" data-i18n="spec_power">Laser Power</div>
+              </div>
+              <div class="mch-spec">
+                <div class="mch-spec-val">3000×6000</div>
+                <div class="mch-spec-label" data-i18n="spec_format">Format (mm)</div>
+              </div>
+              <div class="mch-spec">
+                <div class="mch-spec-val">40 m/min</div>
+                <div class="mch-spec-label" data-i18n="spec_speed">Max. Speed</div>
+              </div>
+              <div class="mch-spec">
+                <div class="mch-spec-val">30 mm</div>
+                <div class="mch-spec-label" data-i18n="spec_thickness">Max. Thickness</div>
+              </div>
+            </div>
+            <div class="mch-bar-section">
+              <div class="mch-bar-row">
+                <span class="mch-bar-label" data-i18n="bar_oee">OEE</span>
+                <div class="mch-bar-track"><div class="mch-bar-fill green" style="width:96%"></div></div>
+                <span class="mch-bar-val" style="color:#22c55e">96%</span>
+              </div>
+              <div class="mch-bar-row">
+                <span class="mch-bar-label" data-i18n="bar_uptime">Uptime</span>
+                <div class="mch-bar-track"><div class="mch-bar-fill" style="width:99%"></div></div>
+                <span class="mch-bar-val">99%</span>
+              </div>
+              <div class="mch-bar-row">
+                <span class="mch-bar-label" data-i18n="bar_quality">Quality</span>
+                <div class="mch-bar-track"><div class="mch-bar-fill green" style="width:99%"></div></div>
+                <span class="mch-bar-val" style="color:#22c55e">99%</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="logos" id="customers">
-    <p class="logos-label" data-i18n="logos_label">Powering operations at</p>
-    <div class="logos-row">
-      <span class="logo-item">Nexora Industrial</span>
-      <span class="logo-item">PrecisionMetal AG</span>
-      <span class="logo-item">DataCore Systems</span>
-      <span class="logo-item">RackForge BV</span>
-      <span class="logo-item">Voltex Manufacturing</span>
-      <span class="logo-item">IronPath Group</span>
-    </div>
-  </section>
-
-  <section class="problem">
-    <div class="container">
-      <div class="problem-grid">
-        <div class="problem-text">
-          <h2 data-i18n="problem_h2">Unplanned downtime costs manufacturers <span class='highlight'>$260,000 per hour.</span></h2>
-          <p data-i18n="problem_p1">Most factories still rely on reactive maintenance and disconnected systems. Your engineers are firefighting instead of optimizing. Your CFO is writing checks instead of reinvesting.</p>
-          <p data-i18n="problem_p2">NovaTerra changes the equation — with a platform that monitors every asset, predicts every failure, and gives your team the intelligence to act before anything breaks.</p>
-          <a href="#products" class="btn-primary" data-i18n="problem_cta">See How It Works →</a>
-        </div>
-        <div class="problem-stats">
-          <div class="pstat">
-            <div class="pstat-num" data-i18n="pstat1_num">23%</div>
-            <div class="pstat-desc" data-i18n="pstat1_desc">average reduction in maintenance costs within 6 months</div>
-          </div>
-          <div class="pstat">
-            <div class="pstat-num" data-i18n="pstat2_num">4.1x</div>
-            <div class="pstat-desc" data-i18n="pstat2_desc">ROI reported by customers in year one</div>
-          </div>
-          <div class="pstat">
-            <div class="pstat-num" data-i18n="pstat3_num">99.2%</div>
-            <div class="pstat-desc" data-i18n="pstat3_desc">uptime achieved across NovaTerra-monitored assets</div>
-          </div>
-        </div>
+  <!-- KEY FIGURES -->
+  <div class="figures-strip">
+    <div class="figures-inner">
+      <div class="figure-item">
+        <div class="figure-num">1987</div>
+        <div class="figure-desc" data-i18n="fig1">Founded in Stuttgart, Germany</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-num">4,200+</div>
+        <div class="figure-desc" data-i18n="fig2">Machines installed worldwide</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-num">38</div>
+        <div class="figure-desc" data-i18n="fig3">Countries with active customers</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-num">18%</div>
+        <div class="figure-desc" data-i18n="fig4">Revenue invested in R&amp;D</div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="products" id="products">
+  <!-- PRODUCTS -->
+  <section class="products-section">
     <div class="container">
-      <div class="section-label" data-i18n="products_label">The Platform</div>
-      <h2 data-i18n="products_h2">Two products. One connected factory.</h2>
-      <div class="product-cards">
-        <a href="assetiq.html" class="product-card">
-          <div class="product-icon">📡</div>
-          <h3 data-i18n="product1_title">AssetIQ</h3>
-          <p data-i18n="product1_desc">Real-time health monitoring for every machine on your floor.</p>
-          <ul>
-            <li data-i18n="product1_li1">Live sensor dashboards</li>
-            <li data-i18n="product1_li2">Anomaly detection with AI</li>
-            <li data-i18n="product1_li3">OEE tracking per asset</li>
-            <li data-i18n="product1_li4">Instant alert routing</li>
-          </ul>
-          <span class="card-link" data-i18n="product1_link">Explore AssetIQ →</span>
+      <div class="section-eyebrow" data-i18n="prod_eyebrow">Machines &amp; Systems</div>
+      <h2 data-i18n="prod_h2">The complete manufacturing portfolio.</h2>
+      <p class="section-intro" data-i18n="prod_intro">From laser cutting and bending to welding and automated storage — NovaTerra covers every step of the sheet metal process.</p>
+      <div class="product-grid">
+        <a href="machines.html#terralaser" class="product-tile">
+          <span class="tile-category" data-i18n="tile_laser_cat">Laser Cutting</span>
+          <span class="tile-name">TerraLaser 3060</span>
+          <span class="tile-desc" data-i18n="tile_laser_desc">High-speed 2D fiber laser for sheet metal processing up to 30 mm. 12 kW beam source, automatic nozzle change, pallet changer.</span>
+          <span class="tile-spec">12 kW · 3000 × 6000 mm</span>
+          <span class="tile-arrow">→</span>
         </a>
-        <a href="maintainai.html" class="product-card">
-          <div class="product-icon">🔧</div>
-          <h3 data-i18n="product2_title">MaintainAI</h3>
-          <p data-i18n="product2_desc">Predictive maintenance scheduling powered by machine learning.</p>
-          <ul>
-            <li data-i18n="product2_li1">Failure prediction (7–30 day horizon)</li>
-            <li data-i18n="product2_li2">Automated work order creation</li>
-            <li data-i18n="product2_li3">Parts & technician scheduling</li>
-            <li data-i18n="product2_li4">Salesforce & SAP integration</li>
-          </ul>
-          <span class="card-link" data-i18n="product2_link">Explore MaintainAI →</span>
+        <a href="machines.html#terrabend" class="product-tile">
+          <span class="tile-category" data-i18n="tile_bend_cat">Bending</span>
+          <span class="tile-name">TerraBend 5000</span>
+          <span class="tile-desc" data-i18n="tile_bend_desc">CNC press brake with automatic tool change, AI-assisted angle correction and real-time springback compensation.</span>
+          <span class="tile-spec">320 t · 4100 mm working length</span>
+          <span class="tile-arrow">→</span>
+        </a>
+        <a href="machines.html#terraweld" class="product-tile">
+          <span class="tile-category" data-i18n="tile_weld_cat">Laser Welding</span>
+          <span class="tile-name">TerraWeld Cell</span>
+          <span class="tile-desc" data-i18n="tile_weld_desc">Robotic laser welding cell for complex 3D weld seams. Integrated seam tracking, adaptive parameter control.</span>
+          <span class="tile-spec">4 kW · 6-axis robotic cell</span>
+          <span class="tile-arrow">→</span>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="testimonial">
-    <div class="container">
-      <blockquote data-i18n="testimonial_quote">"Before NovaTerra, we had three major line stoppages a quarter. In the 18 months since go-live, we've had zero. The ROI conversation with our CFO took about 90 seconds."</blockquote>
-      <cite data-i18n="testimonial_cite">— Markus Berger, Production Manager, PrecisionMetal AG</cite>
+  <!-- SMART FACTORY SPLIT -->
+  <section class="smart-factory-section">
+    <div class="smart-factory-inner">
+      <div>
+        <div class="section-eyebrow" data-i18n="sf_eyebrow">Smart Factory</div>
+        <h2 data-i18n="sf_h2">Your machines.<br/>Networked. Intelligent. Always on.</h2>
+        <p style="margin:16px 0 32px" data-i18n="sf_p">NovaTerra's software suite connects every machine on your floor into one live system — with AI that predicts failures before they happen and orchestrates your entire production flow.</p>
+        <a href="software.html" class="btn-red" data-i18n="sf_cta">Discover Smart Factory →</a>
+      </div>
+      <div class="software-tiles">
+        <a href="software.html#assetiq" class="software-tile">
+          <span class="software-tile-icon">📡</span>
+          <div>
+            <div class="software-tile-name">AssetIQ</div>
+            <div class="software-tile-desc" data-i18n="sf_assetiq">Real-time sensor monitoring — vibration, temperature, OEE per machine.</div>
+          </div>
+        </a>
+        <a href="software.html#maintainai" class="software-tile">
+          <span class="software-tile-icon">🔮</span>
+          <div>
+            <div class="software-tile-name">MaintainAI</div>
+            <div class="software-tile-desc" data-i18n="sf_maintainai">Predictive maintenance — failure forecasts up to 30 days ahead.</div>
+          </div>
+        </a>
+        <a href="software.html#terraos" class="software-tile">
+          <span class="software-tile-icon">🏭</span>
+          <div>
+            <div class="software-tile-name">TerraOS</div>
+            <div class="software-tile-desc" data-i18n="sf_terraos">Full production orchestration — job scheduling, material flow, reporting.</div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section class="pricing" id="pricing">
+  <!-- INDUSTRIES -->
+  <section class="industries-section">
     <div class="container">
-      <div class="section-label" data-i18n="pricing_label">Pricing</div>
-      <h2 data-i18n="pricing_h2">Simple, scalable pricing.</h2>
-      <div class="pricing-cards">
-        <div class="pricing-card">
-          <div class="plan-name" data-i18n="plan1_name">Starter</div>
-          <div class="plan-price"><span data-i18n="plan1_price">$1,200</span><span data-i18n="plan1_period">/mo</span></div>
-          <div class="plan-desc" data-i18n="plan1_desc">Up to 25 assets, 2 sites</div>
-          <ul>
-            <li data-i18n="plan1_li1">AssetIQ monitoring</li>
-            <li data-i18n="plan1_li2">Email & Slack alerts</li>
-            <li data-i18n="plan1_li3">Standard dashboards</li>
-            <li data-i18n="plan1_li4">Community support</li>
-          </ul>
-          <a href="#demo" class="btn-ghost" data-i18n="plan1_cta">Get Started</a>
+      <div class="section-eyebrow" data-i18n="ind_eyebrow">Industries</div>
+      <h2 data-i18n="ind_h2">Built for the most demanding sectors.</h2>
+      <div class="industries-grid">
+        <div class="industry-tile">
+          <div class="industry-icon">🚗</div>
+          <div class="industry-name" data-i18n="ind_auto">Automotive</div>
+          <div class="industry-desc" data-i18n="ind_auto_desc">Body parts, battery enclosures, structural components. High volume, zero defects.</div>
         </div>
-        <div class="pricing-card featured">
-          <div class="plan-badge" data-i18n="plan2_badge">Most Popular</div>
-          <div class="plan-name" data-i18n="plan2_name">Growth</div>
-          <div class="plan-price"><span data-i18n="plan2_price">$3,800</span><span data-i18n="plan2_period">/mo</span></div>
-          <div class="plan-desc" data-i18n="plan2_desc">Up to 100 assets, 5 sites</div>
-          <ul>
-            <li data-i18n="plan2_li1">AssetIQ + MaintainAI</li>
-            <li data-i18n="plan2_li2">Predictive failure alerts</li>
-            <li data-i18n="plan2_li3">Salesforce / SAP integration</li>
-            <li data-i18n="plan2_li4">Dedicated CSM</li>
-          </ul>
-          <a href="#demo" class="btn-primary" data-i18n="plan2_cta">Book a Demo</a>
+        <div class="industry-tile">
+          <div class="industry-icon">✈️</div>
+          <div class="industry-name" data-i18n="ind_aero">Aerospace</div>
+          <div class="industry-desc" data-i18n="ind_aero_desc">Titanium and aluminium alloys. Tolerances to ±0.05 mm. Full traceability.</div>
         </div>
-        <div class="pricing-card">
-          <div class="plan-name" data-i18n="plan3_name">Enterprise</div>
-          <div class="plan-price"><span data-i18n="plan3_price">Custom</span><span data-i18n="plan3_period"></span></div>
-          <div class="plan-desc" data-i18n="plan3_desc">Unlimited assets & sites</div>
-          <ul>
-            <li data-i18n="plan3_li1">Everything in Growth</li>
-            <li data-i18n="plan3_li2">Custom AI model training</li>
-            <li data-i18n="plan3_li3">On-prem / private cloud</li>
-            <li data-i18n="plan3_li4">SLA-backed support</li>
-          </ul>
-          <a href="#demo" class="btn-ghost" data-i18n="plan3_cta">Contact Sales</a>
+        <div class="industry-tile">
+          <div class="industry-icon">🏥</div>
+          <div class="industry-name" data-i18n="ind_med">Medical Technology</div>
+          <div class="industry-desc" data-i18n="ind_med_desc">Surgical instruments, implant components. Clean room compatible systems.</div>
+        </div>
+        <div class="industry-tile">
+          <div class="industry-icon">⚙️</div>
+          <div class="industry-name" data-i18n="ind_sheet">Sheet Metal</div>
+          <div class="industry-desc" data-i18n="ind_sheet_desc">Job shops and contract manufacturers. Maximum flexibility, fast changeover.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="cta-section" id="demo">
+  <!-- SUCCESS STORY TEASER -->
+  <section class="stories-section">
     <div class="container">
-      <h2 data-i18n="cta_h2">See NovaTerra in action.</h2>
-      <p data-i18n="cta_p">30-minute live demo. No pressure. No 47-slide decks.</p>
-      <a href="#" class="btn-primary btn-lg" data-i18n="cta_btn">Book Your Demo</a>
+      <div class="section-eyebrow" data-i18n="story_eyebrow">Success Stories</div>
+      <h2 data-i18n="story_h2">What our customers say.</h2>
+      <div class="stories-grid">
+        <div class="story-tile">
+          <div class="story-company">PrecisionMetal AG</div>
+          <div class="story-industry" data-i18n="st1_industry">Sheet Metal · Germany</div>
+          <blockquote data-i18n="st1_quote">"Since installing the TerraLaser 3060 and connecting it to AssetIQ, we've eliminated unplanned downtime entirely. The machine pays for itself in every shift."</blockquote>
+          <cite data-i18n="st1_cite">— Markus Berger, Head of Production</cite>
+          <div class="story-result"><strong>Result:</strong> <span data-i18n="st1_result">Zero unplanned stoppages in 18 months. Maintenance costs down 31%.</span></div>
+        </div>
+        <div class="story-tile">
+          <div class="story-company">Nexora Automotive GmbH</div>
+          <div class="story-industry" data-i18n="st2_industry">Automotive · Germany</div>
+          <blockquote data-i18n="st2_quote">"The MaintainAI predictions gave us back control. We went from reactive to proactive overnight — and our line managers haven't had a sleepless night since."</blockquote>
+          <cite data-i18n="st2_cite">— Katrin Müller, VP Operations</cite>
+          <div class="story-result"><strong>Result:</strong> <span data-i18n="st2_result">87% prediction accuracy. Emergency procurement reduced by 60%.</span></div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <a href="success-stories.html" class="btn-outline" data-i18n="story_all">View all success stories →</a>
+      </div>
     </div>
   </section>
 
+  <!-- CTA BAND -->
+  <div class="cta-band" id="demo">
+    <div class="cta-band-text">
+      <h3 data-i18n="cta_h3">See NovaTerra in action.</h3>
+      <p data-i18n="cta_p">30-minute live demo — machines, software, Smart Factory. No slides. Just results.</p>
+    </div>
+    <div class="cta-band-actions">
+      <a href="#" class="btn-red lg" data-i18n="cta_demo">Request Demo</a>
+      <a href="piper-faq.html" class="btn-outline" data-i18n="cta_faq">Browse FAQ</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 data-i18n="contact_h2">Ready to talk to an expert?</h2>
+      <p data-i18n="contact_p">Our application engineers are available for a no-obligation consultation — in German and English.</p>
+      <a href="#" class="btn-outline-white lg" data-i18n="contact_btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">Nova<span>Terra</span></a>
-          <p data-i18n="footer_tagline">Industrial intelligence for the modern factory floor.</p>
-        </div>
-        <div class="footer-links">
-          <div>
-            <strong data-i18n="footer_products">Products</strong>
-            <a href="assetiq.html">AssetIQ</a>
-            <a href="maintainai.html">MaintainAI</a>
-          </div>
-          <div>
-            <strong data-i18n="footer_company">Company</strong>
-            <a href="#" data-i18n="footer_about">About</a>
-            <a href="#" data-i18n="footer_careers">Careers</a>
-            <a href="#" data-i18n="footer_blog">Blog</a>
-          </div>
-          <div>
-            <strong data-i18n="footer_support">Support</strong>
-            <a href="#" data-i18n="footer_docs">Documentation</a>
-            <a href="#" data-i18n="footer_status">Status</a>
-            <a href="#" data-i18n="footer_contact">Contact</a>
-          </div>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Nova<span class="logo-accent">Terra</span></a>
+        <p data-i18n="footer_brand">Precision machines and smart factory software for industrial manufacturers worldwide.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <span style="font-size:12px;color:rgba(255,255,255,0.3)">Stuttgart · Munich · London · Chicago</span>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p data-i18n="footer_copy">© 2025 NovaTerra Inc. All rights reserved.</p>
+      <div class="footer-col">
+        <h5 data-i18n="footer_machines">Machines</h5>
+        <a href="machines.html#terralaser">TerraLaser 3060</a>
+        <a href="machines.html#terrabend">TerraBend 5000</a>
+        <a href="machines.html#terraweld">TerraWeld Cell</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_software">Software</h5>
+        <a href="software.html#assetiq">AssetIQ</a>
+        <a href="software.html#maintainai">MaintainAI</a>
+        <a href="software.html#terraos">TerraOS</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer_company">Company</h5>
+        <a href="about.html" data-i18n="footer_about">About NovaTerra</a>
+        <a href="success-stories.html" data-i18n="footer_stories">Success Stories</a>
+        <a href="piper-faq.html" data-i18n="footer_faq">FAQ &amp; Support</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer_copy">© 2025 NovaTerra GmbH · Stuttgart, Germany</p>
+      <div class="footer-bottom-links">
+        <a href="#" data-i18n="footer_privacy">Privacy</a>
+        <a href="#" data-i18n="footer_imprint">Imprint</a>
+        <a href="#" data-i18n="footer_terms">Terms</a>
       </div>
     </div>
   </footer>

@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:1280px;height:720px;overflow:hidden;font-family:'Inter',sans-serif;background:#1d1d1b;}
+.slide{width:1280px;height:720px;padding:60px 80px;display:flex;flex-direction:column;position:relative;}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#e4003a;margin-bottom:14px;}
+h2{font-size:40px;font-weight:800;line-height:1.1;letter-spacing:-1.5px;color:#fff;margin-bottom:48px;}
+.products{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;flex:1;}
+.prod-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:28px 24px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden;}
+.prod-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:#e4003a;}
+.prod-icon{font-size:28px;}
+.prod-name{font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.5px;}
+.prod-tagline{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.5;}
+.prod-features{display:flex;flex-direction:column;gap:7px;margin-top:8px;}
+.prod-feat{font-size:12px;color:rgba(255,255,255,0.6);padding-left:14px;position:relative;}
+.prod-feat::before{content:'—';position:absolute;left:0;color:#e4003a;}
+.prod-kpi{margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);}
+.kpi-num{font-size:26px;font-weight:800;color:#e4003a;letter-spacing:-1px;}
+.kpi-label{font-size:11px;color:rgba(255,255,255,0.3);margin-top:2px;}
+.slide-num{position:absolute;bottom:28px;right:40px;font-size:12px;color:rgba(255,255,255,0.15);font-weight:600;}
+</style></head><body>
+<div class="slide">
+  <div class="eyebrow">Smart Factory Suite</div>
+  <h2>Three products. One intelligent factory.</h2>
+  <div class="products">
+    <div class="prod-card">
+      <div class="prod-icon">📡</div>
+      <div class="prod-name">AssetIQ</div>
+      <div class="prod-tagline">Real-time sensor monitoring for every machine on your floor.</div>
+      <div class="prod-features">
+        <div class="prod-feat">100ms sensor data refresh</div>
+        <div class="prod-feat">AI anomaly detection</div>
+        <div class="prod-feat">OEE per asset, per shift</div>
+        <div class="prod-feat">Alert routing — Slack, Teams, SMS</div>
+        <div class="prod-feat">12 months data retention</div>
+      </div>
+      <div class="prod-kpi"><div class="kpi-num">40ms</div><div class="kpi-label">average alert latency</div></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-icon">🔮</div>
+      <div class="prod-name">MaintainAI</div>
+      <div class="prod-tagline">Predict failures before they happen. Automate the response.</div>
+      <div class="prod-features">
+        <div class="prod-feat">7–30 day failure prediction</div>
+        <div class="prod-feat">Automatic work order creation</div>
+        <div class="prod-feat">Parts forecasting — 60% less emergency procurement</div>
+        <div class="prod-feat">Continuous model retraining</div>
+      </div>
+      <div class="prod-kpi"><div class="kpi-num">87%</div><div class="kpi-label">avg. prediction accuracy</div></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-icon">🏭</div>
+      <div class="prod-name">TerraOS</div>
+      <div class="prod-tagline">Full production orchestration — from order to dispatch.</div>
+      <div class="prod-features">
+        <div class="prod-feat">Job scheduling by machine + deadline</div>
+        <div class="prod-feat">Material flow &amp; nesting efficiency</div>
+        <div class="prod-feat">SAP &amp; Salesforce integration</div>
+        <div class="prod-feat">Automated shift reporting</div>
+      </div>
+      <div class="prod-kpi"><div class="kpi-num">2 weeks</div><div class="kpi-label">time to first value</div></div>
+    </div>
+  </div>
+  <div class="slide-num">5 / 7</div>
+</div>
+</body></html>

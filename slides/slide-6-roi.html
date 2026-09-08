@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:1280px;height:720px;overflow:hidden;font-family:'Inter',sans-serif;background:#fff;}
+.slide{width:1280px;height:720px;display:grid;grid-template-columns:1fr 1fr;position:relative;}
+.left{background:#f8f8f6;padding:72px 64px;display:flex;flex-direction:column;justify-content:center;}
+.right{background:#1d1d1b;padding:64px 56px;display:flex;flex-direction:column;justify-content:center;gap:0;}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#e4003a;margin-bottom:14px;}
+h2{font-size:40px;font-weight:800;line-height:1.1;letter-spacing:-1.5px;color:#1d1d1b;margin-bottom:32px;}
+.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.result-box{background:#fff;border:1px solid #e4e4e0;border-radius:6px;padding:20px 20px;border-top:3px solid #e4003a;}
+.result-num{font-size:32px;font-weight:800;color:#e4003a;letter-spacing:-1.5px;line-height:1;}
+.result-desc{font-size:12px;color:#6e6e6e;margin-top:5px;line-height:1.4;}
+.story-block{padding:24px 0;border-bottom:1px solid rgba(255,255,255,0.07);}
+.story-block:last-child{border-bottom:none;}
+.company{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#e4003a;margin-bottom:8px;}
+.quote{font-size:14px;color:rgba(255,255,255,0.7);font-style:italic;line-height:1.6;margin-bottom:8px;}
+.cite{font-size:12px;color:rgba(255,255,255,0.3);}
+.slide-num{position:absolute;bottom:28px;right:40px;font-size:12px;color:rgba(255,255,255,0.15);font-weight:600;}
+</style></head><body>
+<div class="slide">
+  <div class="left">
+    <div class="eyebrow">Proven Results</div>
+    <h2>Real numbers from<br/>real customers.</h2>
+    <div class="result-grid">
+      <div class="result-box">
+        <div class="result-num">0</div>
+        <div class="result-desc">Unplanned stoppages at PrecisionMetal AG in 18 months (was 4.2/month)</div>
+      </div>
+      <div class="result-box">
+        <div class="result-num">31%</div>
+        <div class="result-desc">Reduction in maintenance costs — PrecisionMetal AG, year 1</div>
+      </div>
+      <div class="result-box">
+        <div class="result-num">4.1x</div>
+        <div class="result-desc">ROI achieved in year 1 — Nexora Automotive GmbH</div>
+      </div>
+      <div class="result-box">
+        <div class="result-num">&lt;9 mo</div>
+        <div class="result-desc">Average payback period across all Smart Factory customers</div>
+      </div>
+      <div class="result-box">
+        <div class="result-num">87%</div>
+        <div class="result-desc">Avg. failure prediction accuracy (MaintainAI fleet-wide)</div>
+      </div>
+      <div class="result-box">
+        <div class="result-num">+30%</div>
+        <div class="result-desc">Order volume increase — MedForm AG, no added shifts</div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="story-block">
+      <div class="company">PrecisionMetal AG · Sheet Metal · Germany</div>
+      <div class="quote">"AssetIQ flagged a coolant pump issue 11 days before it would have failed. We fixed it in a planned slot. That alone paid for the software in month one."</div>
+      <div class="cite">— Markus Berger, Head of Production</div>
+    </div>
+    <div class="story-block">
+      <div class="company">Nexora Automotive GmbH · Automotive · Germany</div>
+      <div class="quote">"We went from reactive to proactive overnight. My team hasn't had a sleepless Sunday in 14 months."</div>
+      <div class="cite">— Katrin Müller, VP Operations</div>
+    </div>
+    <div class="story-block">
+      <div class="company">AeroFab UK · Aerospace · United Kingdom</div>
+      <div class="quote">"We're hitting ±0.03mm on 4mm titanium, day in day out. Our AS9100 auditors commented on it. We've already ordered a second machine."</div>
+      <div class="cite">— James Whitfield, Head of Manufacturing</div>
+    </div>
+  </div>
+  <div class="slide-num">6 / 7</div>
+</div>
+</body></html>
