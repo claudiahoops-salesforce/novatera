@@ -37,35 +37,35 @@
         <li><a href="about.html" data-i18n="nav_about">Company</a></li>
       </ul>
       <div class="nav-right">
-        <a href="index.html#contact" class="btn-outline" data-i18n="nav_contact">Contact</a>
-        <a href="index.html#demo" class="btn-red" data-i18n="nav_demo">Request Demo</a>
+        <a href="index.html#contact" class="btn-secondary" data-i18n="nav_contact">Contact</a>
+        <a href="index.html#demo" class="btn-primary" data-i18n="nav_demo">Request Demo</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <div class="product-page-hero">
-    <div class="product-page-hero-inner">
-      <div style="padding-bottom:60px;">
-        <div class="section-eyebrow" data-i18n="mach_eyebrow">Machines &amp; Systems</div>
+  <div class="product-hero">
+    <div class="product-hero-inner">
+      <div class="product-hero-content">
+        <div class="section-label" data-i18n="mach_eyebrow">Machines &amp; Systems</div>
         <h1 data-i18n="mach_h1">Precision at every step of the process.</h1>
         <p data-i18n="mach_sub">From first cut to final bend — NovaTerra machines are engineered for reliability, speed and zero-defect output. Every machine ships with a 2-year performance guarantee and lifetime software updates.</p>
-        <a href="index.html#demo" class="btn-red" data-i18n="mach_cta">Request a Demo</a>
+        <a href="index.html#demo" class="btn-primary" data-i18n="mach_cta">Request a Demo</a>
       </div>
-      <div class="product-visual-panel">
+      <div class="product-hero-panel">
         <div style="font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;" data-i18n="mach_live">Live Fleet Status</div>
         <div style="display:flex;flex-direction:column;gap:10px;">
           <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:4px;">
             <span style="font-size:13px;color:#fff;font-weight:600;">TerraLaser 3060</span>
-            <span style="font-size:11px;background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:100px;font-weight:700;">● RUNNING</span>
+            <span class="status-dot" style="font-size:11px;background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:100px;font-weight:700;">In Betrieb</span>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:4px;">
             <span style="font-size:13px;color:#fff;font-weight:600;">TerraBend 5000</span>
-            <span style="font-size:11px;background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:100px;font-weight:700;">● RUNNING</span>
+            <span class="status-dot" style="font-size:11px;background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:100px;font-weight:700;">In Betrieb</span>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:4px;">
             <span style="font-size:13px;color:#fff;font-weight:600;">TerraWeld Cell</span>
-            <span style="font-size:11px;background:rgba(245,158,11,0.15);color:#f59e0b;padding:3px 10px;border-radius:100px;font-weight:700;">● MAINTENANCE</span>
+            <span class="status-dot warn" style="font-size:11px;background:rgba(245,158,11,0.15);color:#f59e0b;padding:3px 10px;border-radius:100px;font-weight:700;">Wartung</span>
           </div>
         </div>
         <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:12px;color:rgba(255,255,255,0.3);">Powered by AssetIQ · Updated every 100ms</div>
@@ -76,12 +76,12 @@
   <!-- TERRALASER -->
   <div id="terralaser" style="background:var(--white);padding:96px 32px 0;">
     <div class="container">
-      <div class="section-eyebrow">TerraLaser 3060</div>
+      <div class="section-label">TerraLaser 3060</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;padding-bottom:64px;">
         <div>
           <h2 data-i18n="laser_h2">The fastest fiber laser<br/>in its class.</h2>
           <p style="margin:16px 0;font-size:15px;color:var(--text-mid);line-height:1.75;" data-i18n="laser_p">The TerraLaser 3060 delivers 12 kW of fiber laser power in a rigid gantry frame — engineered for continuous 3-shift operation with automatic nozzle change, pallet changer, and real-time cut quality monitoring via AssetIQ.</p>
-          <ul class="feature-list">
+          <ul class="feat-list">
             <li data-i18n="laser_li1">12 kW fiber beam source — cuts steel up to 30 mm, aluminium up to 25 mm</li>
             <li data-i18n="laser_li2">Automatic nozzle change — zero manual intervention between materials</li>
             <li data-i18n="laser_li3">Pallet changer — continuous loading, no dead time</li>
@@ -89,8 +89,8 @@
             <li data-i18n="laser_li5">Remote diagnostics via TerraConnect — service response in under 2 hours</li>
           </ul>
           <div style="margin-top:24px;display:flex;gap:12px;">
-            <a href="index.html#demo" class="btn-red" data-i18n="laser_cta1">Request Demo</a>
-            <a href="#" class="btn-outline" data-i18n="laser_cta2">Download Datasheet</a>
+            <a href="index.html#demo" class="btn-primary" data-i18n="laser_cta1">Request Demo</a>
+            <a href="#" class="btn-secondary" data-i18n="laser_cta2">Download Datasheet</a>
           </div>
         </div>
         <div>
@@ -119,12 +119,12 @@
   <!-- TERRABEND -->
   <div id="terrabend" style="background:var(--off-white);padding:96px 32px 0;border-top:1px solid var(--border);">
     <div class="container">
-      <div class="section-eyebrow">TerraBend 5000</div>
+      <div class="section-label">TerraBend 5000</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;padding-bottom:64px;">
         <div>
           <h2 data-i18n="bend_h2">AI-assisted bending.<br/>First part correct.</h2>
           <p style="margin:16px 0;font-size:15px;color:var(--text-mid);line-height:1.75;" data-i18n="bend_p">The TerraBend 5000 combines a 320-tonne hydraulic press with AI-driven angle correction and real-time springback compensation. The result: first-part-correct bending, even on new materials, without test bends.</p>
-          <ul class="feature-list">
+          <ul class="feat-list">
             <li data-i18n="bend_li1">320 t press force — handles steel up to 20 mm, aluminium up to 15 mm</li>
             <li data-i18n="bend_li2">Automatic tool change — 8-station tool magazine, changeover in 45 seconds</li>
             <li data-i18n="bend_li3">AI springback compensation — adapts to material batch variation automatically</li>
@@ -132,8 +132,8 @@
             <li data-i18n="bend_li5">MaintainAI integration — hydraulic pressure monitoring, seal wear prediction</li>
           </ul>
           <div style="margin-top:24px;display:flex;gap:12px;">
-            <a href="index.html#demo" class="btn-red" data-i18n="bend_cta1">Request Demo</a>
-            <a href="#" class="btn-outline" data-i18n="bend_cta2">Download Datasheet</a>
+            <a href="index.html#demo" class="btn-primary" data-i18n="bend_cta1">Request Demo</a>
+            <a href="#" class="btn-secondary" data-i18n="bend_cta2">Download Datasheet</a>
           </div>
         </div>
         <div>
@@ -162,12 +162,12 @@
   <!-- TERRAWELD -->
   <div id="terraweld" style="background:var(--white);padding:96px 32px;border-top:1px solid var(--border);">
     <div class="container">
-      <div class="section-eyebrow">TerraWeld Cell</div>
+      <div class="section-label">TerraWeld Cell</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
         <div>
           <h2 data-i18n="weld_h2">Robotic laser welding.<br/>Complex seams, perfect results.</h2>
           <p style="margin:16px 0;font-size:15px;color:var(--text-mid);line-height:1.75;" data-i18n="weld_p">The TerraWeld Cell combines a 4 kW fiber laser with a 6-axis robot arm and integrated seam tracking. Designed for complex 3D weld geometries in automotive, aerospace and heavy equipment manufacturing.</p>
-          <ul class="feature-list">
+          <ul class="feat-list">
             <li data-i18n="weld_li1">4 kW fiber laser — deep penetration, minimal heat distortion</li>
             <li data-i18n="weld_li2">6-axis robot — full 3D weld path freedom, ±0.05 mm repeatability</li>
             <li data-i18n="weld_li3">Seam tracking — adapts in real time to fixture variation</li>
@@ -175,8 +175,8 @@
             <li data-i18n="weld_li5">Integrated quality camera — 100% inline weld inspection</li>
           </ul>
           <div style="margin-top:24px;display:flex;gap:12px;">
-            <a href="index.html#demo" class="btn-red" data-i18n="weld_cta1">Request Demo</a>
-            <a href="#" class="btn-outline" data-i18n="weld_cta2">Download Datasheet</a>
+            <a href="index.html#demo" class="btn-primary" data-i18n="weld_cta1">Request Demo</a>
+            <a href="#" class="btn-secondary" data-i18n="weld_cta2">Download Datasheet</a>
           </div>
         </div>
         <div>
@@ -207,7 +207,7 @@
       <p data-i18n="mach_cta_p">Talk to an application engineer — we'll recommend the right configuration for your materials, volumes and budget.</p>
     </div>
     <div class="cta-band-actions">
-      <a href="index.html#demo" class="btn-red lg" data-i18n="cta_demo">Request Demo</a>
+      <a href="index.html#demo" class="btn-primary lg" data-i18n="cta_demo">Request Demo</a>
     </div>
   </div>
 
