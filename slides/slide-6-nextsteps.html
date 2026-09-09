@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Vogler Packtech — Next Steps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a1214;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .slide {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background: #111a1c;
+  }
+
+  /* LEFT PANEL */
+  .panel-left {
+    width: 46%;
+    height: 100%;
+    background: #111a1c;
+    padding: 52px 48px 48px 56px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #1e2e32;
+  }
+
+  /* RIGHT PANEL */
+  .panel-right {
+    width: 54%;
+    height: 100%;
+    background: #162024;
+    padding: 52px 52px 48px 52px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* LOGO */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .logo-wordmark {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    gap: 1px;
+  }
+  .logo-vogler {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .logo-packtech {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00636e;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* EYEBROW */
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    color: #7ecdd4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .heading {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  .subtext {
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #5a8088;
+    line-height: 1.7;
+    margin-bottom: 36px;
+    max-width: 360px;
+  }
+
+  /* CTA BUTTON */
+  .cta-button {
+    display: inline-block;
+    background: #00636e;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 13px 28px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    margin-bottom: 36px;
+    cursor: pointer;
+    border: none;
+    align-self: flex-start;
+  }
+
+  /* CONTACT */
+  .contact-block {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .contact-item {
+    font-size: 11.5px;
+    font-weight: 400;
+    color: #3a5a60;
+    letter-spacing: 0.02em;
+  }
+  .contact-item a {
+    color: #3a5a60;
+    text-decoration: none;
+  }
+
+  /* RIGHT PANEL CONTENT */
+  .steps-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #2a4e54;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    flex: 1;
+  }
+  .step {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid #1e2e32;
+    align-items: flex-start;
+  }
+  .step:first-child {
+    border-top: 1px solid #1e2e32;
+  }
+  .step-number {
+    font-size: 28px;
+    font-weight: 800;
+    color: #7ecdd4;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    flex-shrink: 0;
+    width: 44px;
+    opacity: 0.6;
+  }
+  .step-body {
+    flex: 1;
+    padding-top: 2px;
+  }
+  .step-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+    letter-spacing: -0.01em;
+  }
+  .step-desc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #4a6e74;
+    line-height: 1.6;
+  }
+
+  /* SLIDE NUMBER */
+  .slide-number {
+    position: absolute;
+    bottom: 26px;
+    right: 44px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #1e3c42;
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <!-- LEFT PANEL -->
+  <div class="panel-left">
+
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="2" fill="#004d57"/>
+        <polyline points="4,26 9,16 14,22 19,12 24,20 29,10 34,18" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <rect x="14" y="31" width="12" height="4" rx="1" fill="#00636e"/>
+      </svg>
+      <div class="logo-wordmark">
+        <span class="logo-vogler">Vogler</span>
+        <span class="logo-packtech">Packtech</span>
+      </div>
+    </div>
+
+    <div class="eyebrow">Next Steps</div>
+    <h2 class="heading">Let's look at what's achievable on your line.</h2>
+    <p class="subtext">A 30-minute demo with real production data. We'll show you exactly what LineView Suite would deliver for your specific setup.</p>
+
+    <div class="cta-button">Book Your Demo</div>
+
+    <div class="contact-block">
+      <div class="contact-item">vogler-packtech.de</div>
+      <div class="contact-item">support@vogler-packtech.de</div>
+      <div class="contact-item">+49 7121 930-0</div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel-right">
+    <div class="steps-label">How it works</div>
+
+    <div class="steps-list">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-body">
+          <div class="step-title">30-min live demo</div>
+          <div class="step-desc">LineView dashboard with real anonymised customer data, PredictCare walkthrough, ROI estimate based on your line.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-body">
+          <div class="step-title">30-day free pilot</div>
+          <div class="step-desc">LineView Suite on up to 3 machines, configured by our engineers. No commitment.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-body">
+          <div class="step-title">ROI analysis</div>
+          <div class="step-desc">Using your pilot data, we build a business case with your actual numbers.</div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div class="step-body">
+          <div class="step-title">Go live in 2 weeks</div>
+          <div class="step-desc">Our engineers handle the full setup. First predictive alert typically within 7 days.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="slide-number">6 / 6</div>
+</div>
+</body>
+</html>

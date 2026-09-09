@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Vogler Packtech — LineView Suite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #060f10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .slide {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background: #0d1f22;
+  }
+
+  /* LEFT PANEL */
+  .panel-left {
+    width: 50%;
+    height: 100%;
+    background: #0d1f22;
+    padding: 52px 48px 48px 56px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* RIGHT PANEL */
+  .panel-right {
+    width: 50%;
+    height: 100%;
+    background: #0a1a1d;
+    padding: 52px 48px 48px 44px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #162a2e;
+  }
+
+  /* EYEBROW */
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    color: #7ecdd4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .heading {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+    max-width: 440px;
+  }
+
+  /* MODULE BLOCKS */
+  .modules {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+    flex: 1;
+  }
+  .module-block {
+    background: #162024;
+    border-left: 3px solid #00636e;
+    padding: 14px 18px;
+  }
+  .module-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+  .module-desc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #4a7a82;
+    line-height: 1.55;
+  }
+  .module-desc strong {
+    color: #7ecdd4;
+    font-weight: 600;
+  }
+
+  /* INTEGRATION TAGS */
+  .tags-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #2a4e54;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    color: #3a7880;
+    background: #0d2428;
+    border: 1px solid #1a3e44;
+    padding: 4px 10px;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  /* RIGHT PANEL - DASHBOARD */
+  .right-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #2a4e54;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .dashboard {
+    background: #0a1416;
+    border: 1px solid #162a2e;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .dash-header {
+    background: #162024;
+    padding: 11px 18px;
+    border-bottom: 1px solid #1e3034;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dash-title {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #7ecdd4;
+    letter-spacing: 0.03em;
+  }
+  .dash-live {
+    font-size: 9px;
+    font-weight: 700;
+    background: #0d2428;
+    color: #4ecb74;
+    border: 1px solid #1a4a2e;
+    padding: 3px 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .live-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #4ecb74;
+  }
+
+  .dash-kpis {
+    display: flex;
+    gap: 0;
+    padding: 14px 18px;
+    border-bottom: 1px solid #1a2e32;
+  }
+  .kpi-box {
+    flex: 1;
+    padding: 0 14px 0 0;
+  }
+  .kpi-box + .kpi-box {
+    padding-left: 14px;
+    border-left: 1px solid #1a2e32;
+  }
+  .kpi-box-label {
+    font-size: 9px;
+    font-weight: 600;
+    color: #2a4e54;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .kpi-box-val {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .kpi-box-val.green  { color: #4ecb74; }
+  .kpi-box-val.amber  { color: #f0b429; }
+  .kpi-box-val.teal   { color: #7ecdd4; }
+
+  .dash-machines {
+    padding: 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+  .machine-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .machine-row-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .machine-name {
+    font-size: 11px;
+    font-weight: 600;
+    color: #7a9ea4;
+  }
+  .machine-pct {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .machine-pct.green { color: #4ecb74; }
+  .machine-pct.amber { color: #f0b429; }
+  .bar-track {
+    height: 5px;
+    background: #162024;
+    position: relative;
+  }
+  .bar-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+  .bar-fill.green { background: #4ecb74; }
+  .bar-fill.amber { background: #f0b429; }
+  .alarm-flag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    background: #3a2800;
+    color: #f0b429;
+    border: 1px solid #5a3e00;
+    padding: 1px 7px;
+    margin-left: 8px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  .dash-footer {
+    padding: 10px 18px;
+    border-top: 1px solid #162024;
+    font-size: 10px;
+    font-weight: 400;
+    color: #2a4e54;
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+
+  /* SLIDE NUMBER */
+  .slide-number {
+    position: absolute;
+    bottom: 26px;
+    right: 44px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #1e3c42;
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <!-- LEFT PANEL -->
+  <div class="panel-left">
+    <div class="eyebrow">LineView Suite</div>
+    <h2 class="heading">Real-time line data. Failures predicted weeks in advance.</h2>
+
+    <div class="modules">
+      <div class="module-block">
+        <div class="module-name">LineView</div>
+        <div class="module-desc">OEE monitoring across every machine. <strong>500 ms refresh.</strong> Browser-based, no client install.</div>
+      </div>
+      <div class="module-block">
+        <div class="module-name">PredictCare</div>
+        <div class="module-desc">Predictive maintenance. <strong>7 to 30 day failure horizon.</strong> Auto work orders in SAP, Maximo or any CMMS.</div>
+      </div>
+      <div class="module-block">
+        <div class="module-name">PackOS</div>
+        <div class="module-desc">Production execution. Order sequencing, batch records, <strong>21 CFR Part 11-compliant</strong> audit trail. Multi-site.</div>
+      </div>
+    </div>
+
+    <div class="tags-label">Integrations</div>
+    <div class="tags-row">
+      <div class="tag">OPC-UA</div>
+      <div class="tag">Modbus TCP</div>
+      <div class="tag">SAP S/4HANA</div>
+      <div class="tag">Microsoft Dynamics 365</div>
+      <div class="tag">Infor LN</div>
+      <div class="tag">IBM Maximo</div>
+      <div class="tag">Azure IoT Hub</div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel-right">
+    <div class="right-label">Live Dashboard Preview</div>
+
+    <div class="dashboard">
+      <div class="dash-header">
+        <div class="dash-title">LineView Suite &nbsp;·&nbsp; Line 3 · Day Shift</div>
+        <div class="dash-live"><div class="live-dot"></div> Live</div>
+      </div>
+
+      <div class="dash-kpis">
+        <div class="kpi-box">
+          <div class="kpi-box-label">OEE</div>
+          <div class="kpi-box-val green">94%</div>
+        </div>
+        <div class="kpi-box">
+          <div class="kpi-box-label">Active Alerts</div>
+          <div class="kpi-box-val amber">2</div>
+        </div>
+        <div class="kpi-box">
+          <div class="kpi-box-label">Unplanned Stoppages</div>
+          <div class="kpi-box-val teal">0</div>
+        </div>
+      </div>
+
+      <div class="dash-machines">
+
+        <div class="machine-row">
+          <div class="machine-row-top">
+            <div class="machine-name">VarioFill HP-X</div>
+            <div class="machine-pct green">96.1%</div>
+          </div>
+          <div class="bar-track"><div class="bar-fill green" style="width:96.1%"></div></div>
+        </div>
+
+        <div class="machine-row">
+          <div class="machine-row-top">
+            <div class="machine-name">FlexCase CR-8</div>
+            <div class="machine-pct green">91.4%</div>
+          </div>
+          <div class="bar-track"><div class="bar-fill green" style="width:91.4%"></div></div>
+        </div>
+
+        <div class="machine-row">
+          <div class="machine-row-top">
+            <div class="machine-name">PureMix PM-200 <span class="alarm-flag">Alert</span></div>
+            <div class="machine-pct amber">72.0%</div>
+          </div>
+          <div class="bar-track"><div class="bar-fill amber" style="width:72%"></div></div>
+        </div>
+
+        <div class="machine-row">
+          <div class="machine-row-top">
+            <div class="machine-name">VarioFill PD-60</div>
+            <div class="machine-pct green">95.7%</div>
+          </div>
+          <div class="bar-track"><div class="bar-fill green" style="width:95.7%"></div></div>
+        </div>
+
+      </div>
+
+      <div class="dash-footer">Update every 500 ms &nbsp;·&nbsp; No client required</div>
+    </div>
+  </div>
+
+  <div class="slide-number">4 / 6</div>
+</div>
+</body>
+</html>

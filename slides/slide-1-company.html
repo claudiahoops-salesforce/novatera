@@ -1,53 +1,309 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Vogler Packtech — Company Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{width:1280px;height:720px;overflow:hidden;font-family:'Inter',sans-serif;background:#003057;color:#fff;}
-.slide{width:1280px;height:720px;display:grid;grid-template-columns:500px 1fr;position:relative;}
-.left{background:#003057;padding:72px 64px;display:flex;flex-direction:column;justify-content:center;}
-.right{background:#f7f7f5;display:flex;flex-direction:column;justify-content:center;padding:64px 56px;gap:28px;}
-.logo{font-size:24px;font-weight:800;color:#fff;letter-spacing:-0.5px;margin-bottom:48px;}
-.logo span{color:#5fa8d3;}
-.eyebrow{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px;}
-h1{font-size:44px;font-weight:700;line-height:1.08;letter-spacing:-1.5px;color:#fff;}
-.sub{font-size:14px;color:rgba(255,255,255,0.5);margin-top:20px;line-height:1.75;max-width:360px;}
-.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-.stat{background:#fff;border:1px solid #dddbd7;padding:20px 22px;}
-.stat-num{font-size:30px;font-weight:800;color:#003057;letter-spacing:-1px;line-height:1;}
-.stat-desc{font-size:11px;color:#888683;margin-top:5px;line-height:1.4;}
-.tag-list{display:flex;flex-wrap:wrap;gap:6px;}
-.tag{background:rgba(0,48,87,0.07);border:1px solid rgba(0,48,87,0.15);color:#003057;font-size:11px;font-weight:600;padding:4px 10px;}
-.addr{font-size:12px;color:#9a9896;letter-spacing:0.5px;}
-.slide-num{position:absolute;bottom:24px;right:36px;font-size:11px;color:rgba(0,0,0,0.18);font-weight:600;}
-</style></head><body>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a1214;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .slide {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background: #111a1c;
+  }
+
+  /* LEFT PANEL */
+  .panel-left {
+    width: 60%;
+    height: 100%;
+    background: #111a1c;
+    padding: 52px 56px 48px 56px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* RIGHT PANEL */
+  .panel-right {
+    width: 40%;
+    height: 100%;
+    background: #162024;
+    padding: 52px 44px 48px 44px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #1e2e32;
+  }
+
+  /* LOGO */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .logo-wordmark {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    gap: 1px;
+  }
+  .logo-vogler {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .logo-packtech {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00636e;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* EYEBROW */
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    color: #7ecdd4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  /* HEADING */
+  .heading {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin-bottom: 20px;
+  }
+
+  /* SUBTEXT */
+  .subtext {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7a9ea4;
+    line-height: 1.7;
+    max-width: 430px;
+    margin-bottom: 36px;
+  }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 450px;
+  }
+  .stat-box {
+    background: #162024;
+    border: 1px solid #1e2e32;
+    padding: 18px 20px 16px 20px;
+  }
+  .stat-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #7ecdd4;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .stat-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #4a6e74;
+    letter-spacing: 0.03em;
+    line-height: 1.35;
+  }
+
+  /* RIGHT PANEL HEADER */
+  .right-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #3a5a60;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  /* PRODUCT LINES */
+  .product-lines {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  .product-line {
+    padding: 15px 0;
+    border-bottom: 1px solid #1e2e32;
+  }
+  .product-line:first-child {
+    border-top: 1px solid #1e2e32;
+  }
+  .product-line-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 3px;
+  }
+  .product-line-cat {
+    font-size: 10px;
+    font-weight: 600;
+    color: #00636e;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .product-line-desc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #4a6e74;
+    line-height: 1.55;
+  }
+
+  /* SOFTWARE BLOCK */
+  .software-block {
+    background: #0d1618;
+    border-left: 3px solid #00636e;
+    padding: 13px 16px;
+    margin-bottom: 22px;
+  }
+  .software-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #3a5a60;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .software-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7a9ea4;
+    line-height: 1.5;
+  }
+  .software-name {
+    color: #7ecdd4;
+    font-weight: 600;
+  }
+
+  /* LOCATIONS */
+  .locations-strip {
+    font-size: 11px;
+    font-weight: 500;
+    color: #3a5a60;
+    letter-spacing: 0.04em;
+  }
+  .locations-strip .loc {
+    color: #5a8088;
+  }
+
+  /* SLIDE NUMBER */
+  .slide-number {
+    position: absolute;
+    bottom: 26px;
+    right: 44px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #2a4a50;
+    letter-spacing: 0.08em;
+  }
+</style>
+</head>
+<body>
 <div class="slide">
-  <div class="left">
-    <div class="logo">Nova<span>Terra</span></div>
-    <div class="eyebrow">Company Overview</div>
-    <h1>Engineering excellence<br/>since 1987.</h1>
-    <p class="sub">NovaTerra designs and manufactures precision laser cutting, bending and welding machines — and the industrial software that connects them. Headquartered in Stuttgart, Germany.</p>
-  </div>
-  <div class="right">
-    <div class="stat-row">
-      <div class="stat"><div class="stat-num">1987</div><div class="stat-desc">Founded in Stuttgart, Germany</div></div>
-      <div class="stat"><div class="stat-num">4,200+</div><div class="stat-desc">Machines installed worldwide</div></div>
-    </div>
-    <div class="stat-row">
-      <div class="stat"><div class="stat-num">38</div><div class="stat-desc">Countries with active customers</div></div>
-      <div class="stat"><div class="stat-num">18%</div><div class="stat-desc">Revenue invested in R&amp;D annually</div></div>
-    </div>
-    <div>
-      <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#9a9896;margin-bottom:10px;">Industries served</div>
-      <div class="tag-list">
-        <span class="tag">Automotive</span>
-        <span class="tag">Aerospace</span>
-        <span class="tag">Medical Technology</span>
-        <span class="tag">Sheet Metal</span>
-        <span class="tag">Energy</span>
+
+  <!-- LEFT PANEL -->
+  <div class="panel-left">
+
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="2" fill="#004d57"/>
+        <polyline points="4,26 9,16 14,22 19,12 24,20 29,10 34,18" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <rect x="14" y="31" width="12" height="4" rx="1" fill="#00636e"/>
+      </svg>
+      <div class="logo-wordmark">
+        <span class="logo-vogler">Vogler</span>
+        <span class="logo-packtech">Packtech</span>
       </div>
     </div>
-    <div class="addr">Stuttgart · Munich · London · Chicago</div>
+
+    <div class="eyebrow">Company Overview</div>
+    <h2 class="heading">Packaging machinery<br>built to run.</h2>
+    <p class="subtext">Founded 1962 in Reutlingen. Family-owned, third generation. No quarterly pressures, no outsourced safety components.</p>
+
+    <div class="stat-grid">
+      <div class="stat-box">
+        <div class="stat-value">1962</div>
+        <div class="stat-label">Founded Reutlingen</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">2,800+</div>
+        <div class="stat-label">Machines installed worldwide</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">44</div>
+        <div class="stat-label">Countries with active customers</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value">14%</div>
+        <div class="stat-label">Revenue invested in R&amp;D</div>
+      </div>
+    </div>
+
   </div>
-  <div class="slide-num">1 / 7</div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel-right">
+    <div class="right-label">Product Lines</div>
+
+    <div class="product-lines">
+      <div class="product-line">
+        <div class="product-line-name">VarioFill</div>
+        <div class="product-line-cat">Filling &amp; Dosing</div>
+        <div class="product-line-desc">Liquid and powder. Up to 600 cycles/min. Tool-free format change under 8 minutes.</div>
+      </div>
+      <div class="product-line">
+        <div class="product-line-name">FlexCase</div>
+        <div class="product-line-cat">Robotic Cartoning</div>
+        <div class="product-line-desc">Up to 280 cartons/min. 6-axis SCARA robot, tool-free format change in under 12 minutes.</div>
+      </div>
+      <div class="product-line">
+        <div class="product-line-name">PureMix</div>
+        <div class="product-line-cat">Process Technology</div>
+        <div class="product-line-desc">Hygienic process vessels, EHEDG-certified. 200 l to 15,000 l. Full CIP/SIP capability.</div>
+      </div>
+    </div>
+
+    <div class="software-block">
+      <div class="software-label">Software</div>
+      <div class="software-text"><span class="software-name">LineView Suite:</span> OEE monitoring, predictive maintenance, production execution</div>
+    </div>
+
+    <div class="locations-strip">
+      <span class="loc">Reutlingen (HQ)</span> &nbsp;·&nbsp; <span class="loc">Kraków</span> &nbsp;·&nbsp; <span class="loc">Charlotte, NC</span>
+    </div>
+
+  </div>
+
+  <div class="slide-number">1 / 6</div>
 </div>
-</body></html>
+</body>
+</html>
