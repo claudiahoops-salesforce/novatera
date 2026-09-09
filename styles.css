@@ -163,6 +163,20 @@ p  { color: var(--text-mid); line-height: 1.75; }
   font-family: inherit;
 }
 .lang-toggle button.active { background: var(--petrol); color: var(--white); }
+.lang-toggle a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.5px;
+  transition: background 0.12s, color 0.12s;
+  text-decoration: none;
+  display: inline-block;
+}
+.lang-toggle a.active { background: var(--petrol); color: var(--white); }
 
 /* ─── NAV ─── */
 .nav {
