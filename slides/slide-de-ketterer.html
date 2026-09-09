@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Referenz Ketterer – Vogler Packtech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #e8e5e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .slide {
+      width: 1280px;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .top-bar {
+      height: 4px;
+      background: #00636e;
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .panels {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+    .panel-left {
+      width: 55%;
+      background: #ffffff;
+      padding: 44px 48px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .panel-right {
+      width: 45%;
+      background: #f5f4f0;
+      padding: 44px 40px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-wordmark {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      color: #161412;
+    }
+    .logo-wordmark span { color: #00636e; }
+    .logo-sub {
+      font-size: 10px;
+      color: #8c8378;
+      margin-top: 2px;
+      line-height: 1;
+    }
+
+    /* Industry pill */
+    .industry-pill {
+      display: inline-block;
+      background: #e0f2f4;
+      color: #00636e;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 3px 10px;
+      border-radius: 2px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #161412;
+      line-height: 1.2;
+      margin-top: 12px;
+      margin-bottom: 14px;
+    }
+    .story-text {
+      font-size: 14px;
+      color: #5c5750;
+      line-height: 1.75;
+    }
+    .story-text + .story-text {
+      margin-top: 10px;
+    }
+
+    blockquote {
+      border-left: 3px solid #00636e;
+      padding-left: 16px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #161412;
+      font-style: italic;
+      line-height: 1.65;
+    }
+    cite {
+      display: block;
+      font-size: 12px;
+      color: #8c8378;
+      margin-top: 8px;
+      font-style: normal;
+    }
+    .products-line {
+      font-size: 12px;
+      color: #8c8378;
+      margin-top: 16px;
+    }
+
+    /* Right panel */
+    .section-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: #00636e;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+    .result-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .result-card {
+      background: #ffffff;
+      border: 1px solid #e2ddd6;
+      padding: 14px 18px;
+    }
+    .result-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: #161412;
+      line-height: 1;
+    }
+    .result-desc {
+      font-size: 11px;
+      color: #5c5750;
+      margin-top: 4px;
+    }
+    .vera-card {
+      background: #ffffff;
+      border: 1px solid #e2ddd6;
+      padding: 12px 16px;
+      margin-top: 16px;
+      font-size: 12px;
+      color: #5c5750;
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="top-bar"></div>
+    <div class="panels">
+
+      <!-- LEFT PANEL -->
+      <div class="panel-left">
+        <div class="logo">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="4" fill="#004d57"/>
+            <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
+          </svg>
+          <div class="logo-text">
+            <div class="logo-wordmark">Vogler<span> Packtech</span></div>
+            <div class="logo-sub">Abfüllung &amp; Prozesstechnik</div>
+          </div>
+        </div>
+
+        <span class="industry-pill">Getränke &amp; Lebensmittel &middot; Deutschland</span>
+
+        <h2>Brauerei Ketterer GmbH: OEE von 74 % auf 91 % nach Austausch der Abfülllinie.</h2>
+
+        <p class="story-text">Brauerei Ketterer betrieb eine Abfüllanlage mit Formatwechselzeiten von 22 Minuten und vier benötigten Einrichtern. Der OEE lag bei durchschnittlich 74 %. Ungeplante Stillstände an der Kohlensäure-Linie verursachten im Schnitt 1,8 Ausfallstunden pro Schicht.</p>
+
+        <p class="story-text">Nach Installation der VarioFill HP-X mit LineView-Anbindung und PredictCare-Sensor-Kit lag die erste vollständige Schicht bei 89 % OEE. PredictCare meldete in den ersten zwölf Monaten drei drohende Ausfälle an Füllventilen und Drehgelenken, alle wurden im geplanten Wartungsfenster behoben.</p>
+
+        <blockquote>
+          Der 22-Minuten-Wechsel auf Weizenbier hat uns jahrelang jeden Montagmorgen Zeit gekostet. Heute stehen wir bei 5,5 Minuten, ohne zusätzliche Einrichter. Das hat unsere gesamte Wochenplanung verändert.
+          <cite>Tobias Renn, Betriebsleiter, Brauerei Ketterer GmbH &amp; Co. KG</cite>
+        </blockquote>
+
+        <p class="products-line">Eingesetzte Produkte: VarioFill HP-X &middot; LineView &middot; PredictCare</p>
+      </div>
+
+      <!-- RIGHT PANEL -->
+      <div class="panel-right">
+        <div class="section-label">Ergebnisse nach 6 Monaten</div>
+
+        <div class="result-cards">
+          <div class="result-card">
+            <div class="result-value">91 %</div>
+            <div class="result-desc">OEE (vorher: 74 %)</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">5,5 min</div>
+            <div class="result-desc">Formatwechselzeit (vorher: 22 min)</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">–2,8 %</div>
+            <div class="result-desc">Ausschussrate auf der Linie</div>
+          </div>
+          <div class="result-card">
+            <div class="result-value">11 Monate</div>
+            <div class="result-desc">Amortisationszeit (Anlage, Software, Inbetriebnahme)</div>
+          </div>
+        </div>
+
+        <div class="vera-card">
+          Soll ich auf Basis Ihrer aktuellen Liniendaten eine ROI-Schätzung aufstellen?
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

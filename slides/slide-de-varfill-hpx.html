@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>VarioFill HP-X – Vogler Packtech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #e8e5e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .slide {
+      width: 1280px;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .top-bar {
+      height: 4px;
+      background: #00636e;
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .panels {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+    .panel-left {
+      width: 52%;
+      background: #ffffff;
+      padding: 44px 48px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .panel-right {
+      width: 48%;
+      background: #f5f4f0;
+      padding: 44px 40px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-wordmark {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      color: #161412;
+    }
+    .logo-wordmark span { color: #00636e; }
+    .logo-sub {
+      font-size: 10px;
+      color: #8c8378;
+      margin-top: 2px;
+      line-height: 1;
+    }
+
+    /* Left panel content */
+    .eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      color: #00636e;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #161412;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .sub-text {
+      font-size: 14px;
+      color: #5c5750;
+      line-height: 1.65;
+    }
+
+    /* Spec grid */
+    .spec-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 24px;
+    }
+    .spec-card {
+      background: #ffffff;
+      border: 1px solid #e2ddd6;
+      border-top: 3px solid #00636e;
+      padding: 14px 18px;
+    }
+    .spec-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: #161412;
+      line-height: 1;
+    }
+    .spec-label {
+      font-size: 11px;
+      color: #5c5750;
+      margin-top: 4px;
+    }
+    .footer-text {
+      font-size: 11px;
+      color: #8c8378;
+      margin-top: 16px;
+    }
+
+    /* Right panel content */
+    .section-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: #00636e;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    /* Comparison table */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .compare-table th,
+    .compare-table td {
+      padding: 9px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e2ddd6;
+    }
+    .compare-table thead th:first-child { background: #f5f4f0; }
+    .compare-table .col-bisher {
+      color: #8c8378;
+      background: #f5f4f0;
+      text-align: center;
+      font-weight: 500;
+    }
+    .compare-table .col-hpx {
+      color: #00636e;
+      background: #e0f2f4;
+      text-align: center;
+      font-weight: 700;
+    }
+    .compare-table tbody td:first-child {
+      color: #161412;
+      font-weight: 500;
+    }
+    .compare-table tbody td.val-bisher {
+      text-align: center;
+      color: #5c5750;
+    }
+    .compare-table tbody td.val-hpx {
+      text-align: center;
+      color: #00636e;
+      font-weight: 600;
+      background: #e0f2f4;
+    }
+
+    /* Petrol note */
+    .petrol-note {
+      background: #e0f2f4;
+      border-left: 3px solid #00636e;
+      padding: 12px 16px;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #5c5750;
+      line-height: 1.6;
+    }
+
+    /* Vera card */
+    .vera-card {
+      background: #ffffff;
+      border: 1px solid #e2ddd6;
+      padding: 12px 16px;
+      margin-top: 16px;
+      font-size: 12px;
+      color: #5c5750;
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="top-bar"></div>
+    <div class="panels">
+
+      <!-- LEFT PANEL -->
+      <div class="panel-left">
+        <div class="logo">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="4" fill="#004d57"/>
+            <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
+          </svg>
+          <div class="logo-text">
+            <div class="logo-wordmark">Vogler<span> Packtech</span></div>
+            <div class="logo-sub">Abfüllung &amp; Prozesstechnik</div>
+          </div>
+        </div>
+
+        <div class="eyebrow">VarioFill HP-X</div>
+        <h2>Formatwechsel in unter 8 Minuten. Bei 600 Takten pro Minute.</h2>
+        <p class="sub-text">Das HP-X ist Vogler Packtechs Hochgeschwindigkeits-Abfüllsystem für wässrige und dünnviskose Produkte. Volumetrisches Durchfluss-Messprinzip, FDA-konforme Kontaktmaterialien, CIP/SIP durchgängig.</p>
+
+        <div class="spec-grid">
+          <div class="spec-card">
+            <div class="spec-value">600</div>
+            <div class="spec-label">Takte pro Minute</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-value">unter 8 min</div>
+            <div class="spec-label">werkzeugloser Formatwechsel</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-value">±0,3 %</div>
+            <div class="spec-label">Dosiergenauigkeit</div>
+          </div>
+          <div class="spec-card">
+            <div class="spec-value">10 ml bis 5 l</div>
+            <div class="spec-label">Gebindebereich</div>
+          </div>
+        </div>
+
+        <p class="footer-text">Kontaktmaterial: 1.4404 / PTFE &nbsp;&middot;&nbsp; CIP/SIP &nbsp;&middot;&nbsp; FDA 21 CFR</p>
+      </div>
+
+      <!-- RIGHT PANEL -->
+      <div class="panel-right">
+        <div class="section-label">Im Vergleich</div>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th style="background:#f5f4f0; color:#161412;"></th>
+              <th class="col-bisher">Bisher</th>
+              <th class="col-hpx">Mit HP-X</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Formatwechselzeit</td>
+              <td class="val-bisher">12&ndash;28 min</td>
+              <td class="val-hpx">unter 8 min</td>
+            </tr>
+            <tr>
+              <td>Benötigte Einrichter</td>
+              <td class="val-bisher">2&ndash;3</td>
+              <td class="val-hpx">1</td>
+            </tr>
+            <tr>
+              <td>Dosiergenauigkeit</td>
+              <td class="val-bisher">±1,2 %</td>
+              <td class="val-hpx">±0,3 %</td>
+            </tr>
+            <tr>
+              <td>OEE (typisch)</td>
+              <td class="val-bisher">74 %</td>
+              <td class="val-hpx">91 %</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="petrol-note">
+          Das HP-X verwendet codierte Formatteile. Die Steuerung prüft vor Produktionsbeginn automatisch, ob das korrekte Format eingebaut ist.
+        </div>
+
+        <div class="vera-card">
+          Sollen wir uns ansehen, was das für Ihre Proteinriegel-Linie konkret bedeutet? Ich kann Ihnen eine Referenz aus der Lebensmittelproduktion zeigen.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
