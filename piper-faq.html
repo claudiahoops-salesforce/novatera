@@ -1,305 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQ &amp; Knowledge Base — NovaTerra</title>
-  <meta name="description" content="Answers to common questions about NovaTerra machines, Smart Factory software, pricing, demos, integrations and support — for prospects and customers." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – Vogler Packtech GmbH</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- TOP BAR -->
   <div class="top-bar">
-    <span>NovaTerra — Engineering excellence since 1987</span>
+    <span>Vogler Packtech GmbH &mdash; Reutlingen, Deutschland</span>
     <div class="top-bar-right">
-      <a href="about.html" data-i18n="top_about">About</a>
-      <a href="piper-faq.html" data-i18n="top_support">Support</a>
-      <div class="lang-toggle" style="margin-left:8px;">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="de">DE</button>
+      <a href="mailto:info@vogler-packtech.de">info@vogler-packtech.de</a>
+      <div class="lang-toggle">
+        <button class="active">DE</button>
+        <button>EN</button>
       </div>
     </div>
   </div>
 
+  <!-- NAV -->
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="logo">
-        <svg class="logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="32" height="32" rx="4" fill="#002f5f"/>
-          <path d="M7 24L12 8L16 18L20 12L25 24" stroke="#007d8a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="16" cy="11" r="2" fill="#5ecfda"/>
+        <svg class="logo-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="34" height="34" rx="4" fill="#004d57"/>
+          <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
         </svg>
-        <span>Nova<span class="logo-accent">Terra</span>
-        <span class="logo-sub" data-i18n="logo_sub">Precision Machines &amp; Smart Factory</span></span>
+        <div class="logo-text">
+          <div class="logo-wordmark">Vogler <span class="accent">Packtech</span></div>
+          <span class="logo-sub">GmbH &mdash; Reutlingen</span>
+        </div>
       </a>
       <ul class="nav-links">
-        <li><a href="machines.html" data-i18n="nav_machines">Machines &amp; Systems</a></li>
-        <li><a href="software.html" data-i18n="nav_software">Smart Factory</a></li>
-        <li><a href="success-stories.html" data-i18n="nav_stories">Success Stories</a></li>
-        <li><a href="about.html" data-i18n="nav_about">Company</a></li>
+        <li><a href="index.html">Produkte</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="about.html">Unternehmen</a></li>
+        <li><a href="piper-faq.html" class="active">FAQ</a></li>
+        <li><a href="success-stories.html">Referenzen</a></li>
       </ul>
       <div class="nav-right">
-        <a href="index.html#demo" class="btn-primary" data-i18n="nav_demo">Request Demo</a>
+        <a href="#demo" class="btn-primary">Demo anfragen</a>
       </div>
     </div>
   </nav>
 
+  <!-- FAQ HERO -->
   <div class="faq-hero">
     <div class="container">
-      <div class="section-label">FAQ &amp; Knowledge Base</div>
-      <h1 style="margin-bottom:12px;">Everything you need to know about NovaTerra.</h1>
-      <p style="font-size:16px;color:var(--text-mid);max-width:560px;line-height:1.7;">Quick answers on machines, software, pricing, demos and support. Can't find what you need? Ask Piper — she knows all of this and more.</p>
+      <span class="eyebrow">Wissensdatenbank</span>
+      <h1>H&auml;ufig gestellte Fragen</h1>
+      <p>Technische Angaben, Preismodelle und Vertriebsinformationen zu Maschinen und Software von Vogler Packtech. Verbindliche Angebote auf Anfrage.</p>
     </div>
   </div>
 
+  <!-- FAQ SECTION -->
   <section class="faq-section">
     <div class="faq-grid">
 
-      <nav class="faq-nav">
-        <div class="faq-nav-item active" onclick="scrollTo('company')">Company</div>
-        <div class="faq-nav-item" onclick="scrollTo('machines')">Machines</div>
-        <div class="faq-nav-item" onclick="scrollTo('software')">Smart Factory</div>
-        <div class="faq-nav-item" onclick="scrollTo('pricing')">Pricing</div>
-        <div class="faq-nav-item" onclick="scrollTo('demo')">Demo &amp; Sales</div>
-        <div class="faq-nav-item" onclick="scrollTo('integration')">Integrations</div>
-        <div class="faq-nav-item" onclick="scrollTo('support')">Support</div>
+      <!-- SIDEBAR NAV -->
+      <nav class="faq-nav" aria-label="FAQ-Kategorien">
+        <a href="#unternehmen" class="faq-nav-item active">Unternehmen</a>
+        <a href="#maschinen" class="faq-nav-item">Maschinen</a>
+        <a href="#software" class="faq-nav-item">Software</a>
+        <a href="#preise" class="faq-nav-item">Preise</a>
+        <a href="#demo" class="faq-nav-item">Demo &amp; Vertrieb</a>
+        <a href="#integration" class="faq-nav-item">Integration</a>
+        <a href="#support" class="faq-nav-item">Support</a>
       </nav>
 
+      <!-- FAQ CONTENT -->
       <div class="faq-content">
 
-        <!-- COMPANY -->
-        <div class="faq-group" id="company">
-          <h3>About NovaTerra</h3>
+        <!-- UNTERNEHMEN -->
+        <div class="faq-group" id="unternehmen">
+          <h3>Unternehmen</h3>
 
           <div class="faq-item">
-            <div class="faq-q">Who is NovaTerra?</div>
-            <div class="faq-a">NovaTerra is a German industrial technology company founded in Stuttgart in 1987. We design and manufacture precision laser cutting, bending and welding machines — and the Smart Factory software that connects and optimises them. We have over 4,200 machines installed in 38 countries, with offices in Stuttgart, Munich, London and Chicago.</div>
+            <div class="faq-q">Was ist Vogler Packtech?</div>
+            <div class="faq-a">Vogler Packtech GmbH wurde 1962 in Reutlingen gegr&uuml;ndet und befindet sich nach wie vor in Familienbesitz der dritten Generation. Das Unternehmen entwickelt und fertigt Abf&uuml;ll-, Kartoniertechnik sowie Prozesstechnik f&uuml;r die verarbeitende Industrie. Derzeit sind weltweit mehr als 2.800 Anlagen in 44 L&auml;ndern in Betrieb, &uuml;berwiegend in den Segmenten Pharma, Lebensmittel und Kosmetik.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">What industries does NovaTerra serve?</div>
-            <div class="faq-a">Our machines and software are used in automotive (body parts, battery enclosures), aerospace (titanium and aluminium components), medical technology (surgical instruments, implants), sheet metal job shops, and general manufacturing. If you're cutting, bending or welding metal, we have a solution for you.</div>
+            <div class="faq-q">Wo werden Vogler-Maschinen gefertigt?</div>
+            <div class="faq-a">Entwicklung und Kernfertigung erfolgen am Stammwerk in Reutlingen. Das Montagewerk in Krak&oacute;w, Polen, nimmt seit 2003 Endmontagen f&uuml;r den europ&auml;ischen Markt vor. Der US-Standort Charlotte, NC, wurde 2017 er&ouml;ffnet und ist ausschlie&szlig;lich f&uuml;r Kundendienst und regionale Inbetriebnahmen zust&auml;ndig.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">Where are NovaTerra machines manufactured?</div>
-            <div class="faq-a">All NovaTerra machines are designed and manufactured in Stuttgart, Germany. We invest 18% of annual revenue in R&D — one of the highest ratios in the industry. Every machine ships with a 2-year performance guarantee.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q">Does NovaTerra serve customers outside Germany?</div>
-            <div class="faq-a">Yes. We have active customers in 38 countries including the UK, Netherlands, Switzerland, USA, and across Southeast Asia. Our UK and US offices handle local sales, installation and service. Demos are available in German and English.</div>
+            <div class="faq-q">F&uuml;r welche Branchen baut Vogler Packtech?</div>
+            <div class="faq-a">Der Schwerpunkt liegt auf vier Segmenten: Food &amp; Beverage (Abf&uuml;llung, Kartonierung, Etikettiertechnik), Pharma &amp; Life Science (GMP-konforme Abf&uuml;ll- und Verpackungslinien), Cosmetics (F&uuml;ll- und Dosiertechnik f&uuml;r visk&ouml;se Produkte) sowie Lohnabpacker, die h&auml;ufig mehrere Produktgruppen auf einer Linie verarbeiten.</div>
           </div>
         </div>
 
-        <!-- MACHINES -->
-        <div class="faq-group" id="machines">
-          <h3>Machines &amp; Systems</h3>
+        <!-- MASCHINEN -->
+        <div class="faq-group" id="maschinen">
+          <h3>Maschinen</h3>
 
           <div class="faq-item">
-            <div class="faq-q">What machines does NovaTerra make?</div>
-            <div class="faq-a">Our current machine portfolio includes: <strong>TerraLaser 3060</strong> (2D fiber laser cutting, 12 kW, 3000×6000mm working area), <strong>TerraBend 5000</strong> (CNC press brake, 320 t, 4100mm working length, automatic tool change), and <strong>TerraWeld Cell</strong> (6-axis robotic laser welding cell, 4 kW). All machines integrate with the NovaTerra Smart Factory software suite.</div>
+            <div class="faq-q">Welche Maschinen bietet Vogler Packtech an?</div>
+            <div class="faq-a">
+              Das aktuelle Kernprogramm umfasst drei Baureihen:
+              <ul class="feat-list" style="margin-top:10px;">
+                <li><strong>VarioFill</strong> &ndash; Abf&uuml;llmaschine f&uuml;r fl&uuml;ssige und past&ouml;se Produkte. Verf&uuml;gbar als Standardvariante (bis 12.000 Einheiten/h) und als HP-X (bis 24.000 Einheiten/h). Kontaktmaterialien 1.4404 und PTFE, CIP/SIP-f&auml;hig, FDA-konform.</li>
+                <li><strong>FlexCase</strong> &ndash; Kartoniertechnik f&uuml;r Falt- und Steckkartons. Formatumr&uuml;stung ohne Werkzeug, Geschwindigkeit bis 450 Kartons/min, kompatibel mit Formaten ab 40 &times; 20&nbsp;mm.</li>
+                <li><strong>PureMix</strong> &ndash; Prozesstechnik nach EHEDG-Richtlinien f&uuml;r Misch- und Homogenisiervorg&auml;nge. Totraumfreie Konstruktion, Ra &le; 0,8 &micro;m, alle produktber&uuml;hrenden Fl&auml;chen aus 1.4435.</li>
+              </ul>
+            </div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">What materials can the TerraLaser 3060 cut?</div>
-            <div class="faq-a">The TerraLaser 3060 cuts mild steel (up to 30mm), stainless steel (up to 20mm), aluminium (up to 25mm), copper, brass, and titanium. The 12 kW fiber beam source is optimised for high-reflectivity materials — no CO₂ laser needed.</div>
+            <div class="faq-q">Wie schnell ist ein Formatwechsel bei der VarioFill HP-X?</div>
+            <div class="faq-a">Bei der VarioFill HP-X ist ein vollst&auml;ndiger Formatwechsel in unter 8 Minuten m&ouml;glich, sofern das neue Format bereits im Rezepturspeicher der Maschinensteuerung hinterlegt ist. Alle Formatteile sind als codierte Wechseleinheiten ausgef&uuml;hrt und k&ouml;nnen ohne Spezialwerkzeug getauscht werden.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">What is the TerraBend 5000's angle accuracy?</div>
-            <div class="faq-a">The TerraBend 5000 achieves ±0.1° angle accuracy — with AI-assisted springback compensation that adapts automatically to material batch variation. First-part-correct bending without test bends, even on new materials.</div>
+            <div class="faq-q">Ist die VarioFill FDA-konform?</div>
+            <div class="faq-a">Ja. Die VarioFill ist in allen Varianten mit Kontaktmaterialien aus 1.4404 (316L) und PTFE ausgef&uuml;hrt. CIP- und SIP-Reinigung sind seriенm&auml;&szlig;ig. Eine vollst&auml;ndige Materialzertifizierung (3.1-Abnahmepr&uuml;fzeugnis nach DIN EN 10204) wird mit jeder Anlage mitgeliefert. Die Konstruktion entspricht den Anforderungen der FDA 21 CFR f&uuml;r direkt produktber&uuml;hrende Bauteile.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">How long does machine installation take?</div>
-            <div class="faq-a">Installation and commissioning typically takes 3–5 days for a single machine, including AssetIQ connection and operator training. Our application engineers handle everything on-site. Time to first production part is typically under 1 week.</div>
+            <div class="faq-q">Was bedeutet EHEDG-Zertifizierung?</div>
+            <div class="faq-a">Die EHEDG (European Hygienic Engineering &amp; Design Group) ist eine internationale Vereinigung, die Richtlinien f&uuml;r hygienegerechte Konstruktion in der Lebensmittel- und Pharmaindustrie erarbeitet. Eine EHEDG-zertifizierte Anlage erf&uuml;llt definierte Mindestanforderungen an Totraumfreiheit, Reinigbarkeit und Oberfl&auml;chenqualit&auml;t. Bei Vogler Packtech bedeutet das: keine Totstellen an produktber&uuml;hrenden Fl&auml;chen, Rauheitswert Ra &le; 0,8 &micro;m an Innenwandungen, Schweissn&auml;hte vollst&auml;ndig durchgeschwei&szlig;t und nachgeschliffen.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">What warranty comes with NovaTerra machines?</div>
-            <div class="faq-a">All NovaTerra machines come with a 2-year performance warranty covering parts and labour. Extended warranty packages are available up to 5 years. Remote diagnostics via TerraConnect ensures a service response within 2 hours for critical issues.</div>
+            <div class="faq-q">Wie lange dauert die Inbetriebnahme einer Anlage?</div>
+            <div class="faq-a">Die Dauer h&auml;ngt vom Maschinentyp und der Linienintegration ab. Als Richtwert gilt: VarioFill (Einzelmaschine) 3 Tage, FlexCase 3&ndash;4 Tage, PureMix-Prozessanlage 5&ndash;7 Tage. Bei vollst&auml;ndigen Linieninstallationen mit mehreren Maschinen und &Uuml;bergabetechnik wird der Zeitplan im Projektierungsgespr&auml;ch festgelegt.</div>
           </div>
         </div>
 
         <!-- SOFTWARE -->
         <div class="faq-group" id="software">
-          <h3>Smart Factory Software</h3>
+          <h3>Software</h3>
 
           <div class="faq-item">
-            <div class="faq-q">What is the NovaTerra Smart Factory suite?</div>
-            <div class="faq-a">The Smart Factory suite consists of three products: <strong>AssetIQ</strong> (real-time sensor monitoring and anomaly detection), <strong>MaintainAI</strong> (predictive maintenance and automated work order creation), and <strong>TerraOS</strong> (full production orchestration — job scheduling, material flow, reporting). All three products work together and connect to your existing ERP and CMMS systems.</div>
+            <div class="faq-q">Was ist die LineView Suite?</div>
+            <div class="faq-a">
+              Die LineView Suite ist die hauseigene Software-Plattform von Vogler Packtech, eingef&uuml;hrt 2021. Sie besteht aus drei Modulen:
+              <ul class="feat-list" style="margin-top:10px;">
+                <li><strong>LineView</strong> &ndash; Echtzeit-Liniendashboard mit OEE-Auswertung, Schichtberichten und konfigurierbaren Ansichten. Datenerfassung direkt &uuml;ber OPC-UA von der Maschinensteuerung.</li>
+                <li><strong>PredictCare</strong> &ndash; Zustandsbasiertes Wartungsmodul. Wertet Sensordaten aus und gibt Wartungsempfehlungen mit einem Prognosehorizont von 7 bis 30 Tagen.</li>
+                <li><strong>PackOS</strong> &ndash; Produktionsausf&uuml;hrungssystem (MES-Light) mit Auftragsverwaltung, elektronischem Batch-Record und GMP-konformem Audit-Trail nach 21 CFR Part 11.</li>
+              </ul>
+            </div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">Do I need to buy NovaTerra machines to use the software?</div>
-            <div class="faq-a">AssetIQ and MaintainAI can connect to any machine with an OPC-UA, MQTT or Modbus interface — including machines from other manufacturers. TerraOS is designed to work with any production environment. However, NovaTerra machines include native AssetIQ integration out of the box.</div>
+            <div class="faq-q">Funktioniert die Software auch mit Fremdmaschinen?</div>
+            <div class="faq-a">Ja. Die LineView Suite kommuniziert &uuml;ber OPC-UA (IEC 62541) und Modbus TCP/IP. Maschinen anderer Hersteller k&ouml;nnen eingebunden werden, sofern sie eines dieser Protokolle unterst&uuml;tzen. F&uuml;r &auml;ltere Steuerungen ohne Netzwerkanbindung bietet Vogler Packtech optional Edge-Hardware zur Signalerfassung. Die Anbindungskosten f&uuml;r Fremdmaschinen werden einmalig berechnet.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">How does MaintainAI predict failures?</div>
-            <div class="faq-a">MaintainAI trains machine learning models on your machine's sensor history — vibration, temperature, pressure, current draw — and identifies the patterns that precede failures. Predictions are delivered with a confidence score and recommended action. The models retrain automatically as new data arrives, improving accuracy over time. Average prediction accuracy across our customer base is 87%.</div>
+            <div class="faq-q">Wie weit im Voraus prognostiziert PredictCare Ausf&auml;lle?</div>
+            <div class="faq-a">PredictCare gibt Wartungsempfehlungen mit einem Prognosehorizont von 7 bis 30 Tagen, abh&auml;ngig von Maschinentyp, verf&uuml;gbarer Sensorik und historischer Datenbasis. Die Vorhersagegenauigkeit steigt mit zunehmendem Betriebsdatenvolumen. W&auml;hrend der ersten 30 Betriebstage sind die Ausgaben als Richtwerte einzuordnen.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">How far in advance can MaintainAI predict failures?</div>
-            <div class="faq-a">The prediction horizon depends on the failure mode and the volume of historical data. Typical predictions are 7–14 days ahead. For slow-developing issues (bearing wear, seal degradation), MaintainAI regularly delivers 30-day advance warnings. This gives teams time to schedule maintenance in planned downtime windows.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q">How quickly can we go live with AssetIQ?</div>
-            <div class="faq-a">For NovaTerra machines, AssetIQ is pre-configured and typically live within the same day as machine installation. For third-party machines, our integration team connects sensors and configures dashboards within 1–2 weeks. Most customers see their first anomaly detection alert within the first week of go-live.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q">Is the Smart Factory software cloud-based or on-premise?</div>
-            <div class="faq-a">Both options are available. The standard deployment is cloud-based (hosted on Azure, with data residency in the EU). On-premise and private cloud deployments are available for Enterprise customers with specific data sovereignty requirements. SOC2 Type II certified.</div>
+            <div class="faq-q">Ist PackOS GMP-konform?</div>
+            <div class="faq-a">Ja. PackOS verf&uuml;gt &uuml;ber einen l&uuml;ckenlosen Audit-Trail nach 21 CFR Part 11. Alle Datenbankeintr&auml;ge sind zeitgestempelt, benutzerzugeordnet und unver&auml;nderbar gespeichert. Elektronische Unterschriften und Vier-Augen-Freigaben f&uuml;r kritische Prozessschritte sind konfigurierbar. Validierungsunterst&uuml;tzung (IQ/OQ-Dokumentation) ist auf Anfrage verf&uuml;gbar.</div>
           </div>
         </div>
 
-        <!-- PRICING -->
-        <div class="faq-group" id="pricing">
-          <h3>Pricing &amp; Packages</h3>
+        <!-- PREISE -->
+        <div class="faq-group" id="preise">
+          <h3>Preise</h3>
 
           <div class="faq-item">
-            <div class="faq-q">How is the Smart Factory software priced?</div>
-            <div class="faq-a">Software is priced per connected asset per month. The <strong>Starter</strong> package (up to 10 assets) starts at €800/month and includes AssetIQ monitoring and basic alerting. The <strong>Professional</strong> package adds MaintainAI and TerraOS integration from €2,400/month. <strong>Enterprise</strong> pricing is available for customers with 25+ assets or multiple sites — contact our team for a custom quote.</div>
+            <div class="faq-q">Wie ist die LineView Suite lizenziert?</div>
+            <div class="faq-a">
+              Die Lizenzierung erfolgt nach Anzahl verbundener Anlagen (Assets) pro Monat. Drei Stufen stehen zur Wahl:
+              <ul class="feat-list" style="margin-top:10px;">
+                <li><strong>Starter</strong> &ndash; ab 600 EUR/Monat bis 10 Assets. Enth&auml;lt LineView mit Basis-OEE-Reporting.</li>
+                <li><strong>Professional</strong> &ndash; ab 1.800 EUR/Monat. Enth&auml;lt LineView, PredictCare und PackOS, ohne Mengenbeschr&auml;nkung der Assets.</li>
+                <li><strong>Enterprise</strong> &ndash; Individualpreis. F&uuml;r Mehrstandortbetrieb, erweiterte SLAs und tiefe ERP-Integration. Konditionen auf Anfrage.</li>
+              </ul>
+              Alle Preise zzgl. gesetzlicher MwSt. und gelten f&uuml;r Jahresvertr&auml;ge.
+            </div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">Are there setup or implementation fees?</div>
-            <div class="faq-a">For standard AssetIQ deployments on NovaTerra machines, there are no additional setup fees — configuration is included. For third-party machine connections and TerraOS implementations, a one-time professional services fee applies depending on complexity. Our team will scope this before any commitment.</div>
+            <div class="faq-q">Gibt es eine kostenlose Testphase?</div>
+            <div class="faq-a">Ja. Neukunden erhalten einen 30-t&auml;gigen Pilotbetrieb auf bis zu 3 Assets ohne Lizenzgeb&uuml;hr. Voraussetzung ist eine bestehende Netzwerkverbindung an den betreffenden Maschinen. Anbindung und Einrichtung w&auml;hrend der Pilotphase &uuml;bernehmen Vogler-Techniker vor Ort.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">What is the typical ROI timeline?</div>
-            <div class="faq-a">Based on customer data, the average ROI payback period for the Smart Factory suite is under 9 months. The biggest drivers are eliminated unplanned downtime, reduced emergency maintenance costs, and improved OEE. Nexora Automotive achieved 4.1x ROI in year one. PrecisionMetal AG saved €180,000 in the first 12 months.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q">Is there a free trial?</div>
-            <div class="faq-a">Yes. We offer a 30-day free pilot of AssetIQ on up to 3 connected assets. This includes full setup support from our application engineers, and you keep all data and configurations when you convert to a paid plan. Ask our team to set this up during or after your demo.</div>
+            <div class="faq-q">Welche Implementierungskosten entstehen?</div>
+            <div class="faq-a">Bei Vogler-eigenen Maschinen entstehen keine gesonderten Implementierungskosten; die Software-Anbindung ist Bestandteil der Maschinenlieferung. F&uuml;r Fremdmaschinen wird eine einmalige Integrationsgeb&uuml;hr berechnet, deren H&ouml;he von Maschinenanzahl, Steuerungstyp und erforderlicher Anpassung abh&auml;ngt. Einen unverbindlichen Kostenrahmen nennt das Vertriebsteam nach einer kurzen technischen Vorabkl&auml;rung.</div>
           </div>
         </div>
 
-        <!-- DEMO & SALES -->
+        <!-- DEMO & VERTRIEB -->
         <div class="faq-group" id="demo">
-          <h3>Demo &amp; Sales Process</h3>
+          <h3>Demo &amp; Vertrieb</h3>
 
           <div class="faq-item">
-            <div class="faq-q">What happens in a NovaTerra demo?</div>
-            <div class="faq-a">Our standard demo is 30 minutes and covers three things: (1) a live AssetIQ dashboard connected to a real machine feed, (2) a MaintainAI walkthrough showing how failure predictions are generated and actioned, and (3) a TerraOS production overview. We tailor the demo to your specific industry and pain points. No generic slides — just your scenario.</div>
+            <div class="faq-q">Was zeigt eine Vogler-Demo?</div>
+            <div class="faq-a">Die Demo dauert ca. 30 Minuten und gliedert sich in drei Teile: Live-Ansicht des LineView-Dashboards mit realen Produktionsdaten eines Referenzkunden (anonymisiert), gef&uuml;hrte Darstellung des PredictCare-Moduls anhand einer konkreten Wartungsprognose sowie eine individuelle ROI-Kalkulation auf Basis der von Ihnen angegebenen Linienvef&uuml;gbarkeit und Wartungskosten.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">How do I book a demo?</div>
-            <div class="faq-a">You can book directly via the "Request Demo" button on any page, or ask Piper (our AI assistant) to book a slot for you. Demos are available in German and English, typically within 48 hours of request. We'll send a calendar invite with a video call link.</div>
+            <div class="faq-q">Wer sollte an der Demo teilnehmen?</div>
+            <div class="faq-a">Sinnvoll ist die Teilnahme des Betriebsleiters oder Produktionsleiters sowie des Instandhaltungsleiters. Falls PackOS als MES evaluiert werden soll, empfiehlt sich die fr&uuml;hzeitige Einbindung der IT-Abteilung oder des ERP-Verantwortlichen, damit Schnittstellenfragen direkt gekl&auml;rt werden k&ouml;nnen.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">Who should attend the demo?</div>
-            <div class="faq-a">The most productive demos include someone from production operations (Head of Production, Plant Manager, Maintenance Manager) and someone from finance or IT if an ERP integration is likely. We keep it small — typically 2–4 people — so the conversation stays focused and practical.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q">What does the sales process look like after a demo?</div>
-            <div class="faq-a">After the demo, we typically propose a 30-day AssetIQ pilot on 3 assets — at no cost. This gives you real data from your own machines to build an internal business case. If the pilot results are positive, we move to a full commercial proposal. The whole process from first demo to signed contract typically takes 4–8 weeks.</div>
+            <div class="faq-q">Wie l&auml;uft der Vertriebsprozess ab?</div>
+            <div class="faq-a">Der Standardprozess umfasst vier Schritte: (1) Demo-Termin mit Bedarfsanalyse, (2) 30-t&auml;giger Pilotbetrieb auf 3 Assets, (3) gemeinsame ROI-Auswertung und Angebotsentwurf, (4) finales Angebot und Vertragsabschluss. Von Demo bis unterzeichnetem Vertrag vergehen erfahrungsgem&auml;&szlig; 6 bis 12 Wochen, abh&auml;ngig von den internen Entscheidungszyklen des Kunden.</div>
           </div>
         </div>
 
-        <!-- INTEGRATIONS -->
+        <!-- INTEGRATION -->
         <div class="faq-group" id="integration">
-          <h3>Integrations</h3>
+          <h3>Integration</h3>
 
           <div class="faq-item">
-            <div class="faq-q">Does NovaTerra integrate with Salesforce?</div>
-            <div class="faq-a">Yes — TerraOS has a native Salesforce integration that syncs asset records, service cases, and field service work orders in real time. When MaintainAI creates a maintenance work order, it automatically creates a Salesforce Case and assigns it to the relevant field service resource. Asset health data is visible directly within Salesforce.</div>
+            <div class="faq-q">Welche ERP-Systeme werden unterst&uuml;tzt?</div>
+            <div class="faq-a">Native Konnektoren bestehen f&uuml;r SAP S/4HANA (BAPI/RFC sowie REST-basierte Integration Suite), Microsoft Dynamics 365 (Dataverse API) und Infor LN (ION-Bus). F&uuml;r weitere ERP-Systeme ist eine CSV-basierte Schnittstelle oder REST-API-Anbindung verf&uuml;gbar; der jeweilige Implementierungsaufwand ist im Einzelfall zu bewerten.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">Does it integrate with SAP?</div>
-            <div class="faq-a">Yes. TerraOS integrates with SAP PM (Plant Maintenance) for work order synchronisation, SAP ERP for order and material management, and SAP S/4HANA via standard APIs. Nexora Automotive runs a full SAP integration across their 5 sites.</div>
+            <div class="faq-q">Welche Maschinenprotokolle werden unterst&uuml;tzt?</div>
+            <div class="faq-a">Die LineView Suite unterst&uuml;tzt OPC-UA (IEC 62541), Modbus TCP/IP, MQTT (Broker-Anbindung) sowie direktes Lesen von Siemens S7-Steuerungen (S7-300, S7-400, S7-1200, S7-1500) &uuml;ber das S7-Kommunikationsprotokoll. Propriet&auml;re Protokolle &auml;lterer Steuerungen k&ouml;nnen &uuml;ber optionale Edge-Gateways adaptiert werden.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">What machine protocols are supported?</div>
-            <div class="faq-a">AssetIQ supports OPC-UA, MQTT, Modbus TCP/IP, and Siemens S7 natively. For older machines, our edge gateway hardware can translate proprietary protocols. We support 500+ sensor types out of the box.</div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-q">Can AssetIQ connect to non-NovaTerra machines?</div>
-            <div class="faq-a">Yes. AssetIQ is machine-agnostic. We have customers running AssetIQ alongside machines from TRUMPF, Amada, Bystronic, Trumpf, and Mazak. As long as the machine has an OPC-UA or Modbus interface, or we can attach sensors to it, AssetIQ can monitor it.</div>
+            <div class="faq-q">Kann PackOS mehrere Standorte verwalten?</div>
+            <div class="faq-a">Ja. PackOS ist von Beginn an f&uuml;r den Mehrstandortbetrieb ausgelegt. Aus einer zentralen Instanz heraus lassen sich beliebig viele Werke mit eigenem Benutzer- und Rechtemanagement verwalten. Standort&uuml;bergreifende Auswertungen und konsolidierte Berichte sind im Standard enthalten.</div>
           </div>
         </div>
 
         <!-- SUPPORT -->
         <div class="faq-group" id="support">
-          <h3>Support &amp; Service</h3>
+          <h3>Support</h3>
 
           <div class="faq-item">
-            <div class="faq-q">What support is included with NovaTerra machines?</div>
-            <div class="faq-a">All machines include 2-year warranty with TerraConnect remote diagnostics. Standard support provides email and phone response within 4 hours during business hours. On-site service response is within 24 hours for critical issues (8 hours for Enterprise customers). Spare parts are stocked regionally for 2-hour delivery in Germany, UK, and North America.</div>
+            <div class="faq-q">Was ist im Maschinenlieferumfang enthalten?</div>
+            <div class="faq-a">Jede Vogler-Anlage wird mit einer 2-j&auml;hrigen Herstellergarantie geliefert. Enthalten sind au&szlig;erdem: Ferndiagnose &uuml;ber TerraConnect (proprietäres Remote-Access-System von Vogler Packtech), eint&auml;gige Bedienschulung f&uuml;r Anlagenpersonal und eint&auml;gige Wartungsschulung f&uuml;r das Instandhaltungsteam. Ersatzteilempfehlung und Erstteilpaket sind Bestandteil der Anlagendokumentation.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">Is training included?</div>
-            <div class="faq-a">Yes. Machine operator training (1 day on-site) and maintenance training (1 day on-site) are included with every machine. AssetIQ and TerraOS onboarding is delivered remotely over 2 sessions. Additional training packages are available for larger teams or refresher courses.</div>
+            <div class="faq-q">Wie schnell reagiert der Service?</div>
+            <div class="faq-a">F&uuml;r Standardkunden gilt: Erstreaktion per E-Mail oder Telefon innerhalb von 4 Stunden (werktags), Vor-Ort-Einsatz innerhalb von 24 Stunden. Enterprise-Kunden erhalten eine verk&uuml;rzte Vor-Ort-Reaktionszeit von 8 Stunden sowie einen dedizierten Ansprechpartner im technischen Kundendienst. Abweichende SLAs k&ouml;nnen vertraglich vereinbart werden.</div>
           </div>
 
           <div class="faq-item">
-            <div class="faq-q">How do I contact support?</div>
-            <div class="faq-a">For software support: support@novatera.com or via the in-app help centre. For machine service: call our regional service line or raise a TerraConnect alert directly from the machine interface. Emergency line available 24/7 for production-critical issues.</div>
+            <div class="faq-q">Wie kontaktiere ich den Support?</div>
+            <div class="faq-a">Der technische Kundendienst ist per E-Mail unter <a href="mailto:support@vogler-packtech.de" style="color:var(--petrol);">support@vogler-packtech.de</a> erreichbar sowie telefonisch &uuml;ber die in Ihrer Anlagendokumentation vermerkten Servicerufnummer. Kunden mit aktiver LineView-Lizenz k&ouml;nnen zus&auml;tzlich direkt &uuml;ber das In-App-Hilfssmen&uuml; im Dashboard eine Serviceanfrage &ouml;ffnen; diese wird automatisch mit den aktuellen Maschinendaten verkn&uuml;pft.</div>
           </div>
         </div>
 
-      </div>
+      </div><!-- /faq-content -->
+    </div><!-- /faq-grid -->
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="contact-section" id="kontakt">
+    <h2>Haben Sie weitere Fragen?</h2>
+    <p>Unser Vertriebsteam beantwortet technische R&uuml;ckfragen und erstellt Ihnen auf Wunsch eine unverbindliche Vergleichskalkulation f&uuml;r Ihre spezifische Linienaufstellung.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="mailto:info@vogler-packtech.de" class="btn-white lg">E-Mail senden</a>
+      <a href="#demo" class="btn-secondary lg" style="border-color:rgba(255,255,255,0.4);color:#fff;">Demo anfragen</a>
     </div>
   </section>
 
-  <section class="contact-section">
-    <div class="container">
-      <h2>Still have questions?</h2>
-      <p>Ask Piper — she knows everything on this page and can book a demo or connect you with an expert instantly.</p>
-      <a href="index.html#demo" class="btn-white lg">Talk to an Expert</a>
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" class="logo">Nova<span class="logo-accent">Terra</span></a>
-        <p data-i18n="footer_brand">Precision machines and smart factory software for industrial manufacturers worldwide.</p>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;">
+          <svg class="logo-mark" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="34" height="34" rx="4" fill="#004d57"/>
+            <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
+          </svg>
+          <div class="logo-wordmark">Vogler <span class="accent">Packtech</span></div>
+        </div>
+        <p>Verpackungsmaschinenhersteller seit 1962. Hauptsitz Reutlingen, Deutschland.</p>
       </div>
       <div class="footer-col">
-        <h5 data-i18n="footer_machines">Machines</h5>
-        <a href="machines.html#terralaser">TerraLaser 3060</a>
-        <a href="machines.html#terrabend">TerraBend 5000</a>
-        <a href="machines.html#terraweld">TerraWeld Cell</a>
+        <h5>Produkte</h5>
+        <a href="#">VarioFill</a>
+        <a href="#">FlexCase</a>
+        <a href="#">PureMix</a>
+        <a href="software.html">LineView Suite</a>
       </div>
       <div class="footer-col">
-        <h5 data-i18n="footer_software">Software</h5>
-        <a href="software.html#assetiq">AssetIQ</a>
-        <a href="software.html#maintainai">MaintainAI</a>
-        <a href="software.html#terraos">TerraOS</a>
+        <h5>Unternehmen</h5>
+        <a href="about.html">&Uuml;ber Vogler Packtech</a>
+        <a href="#">Karriere</a>
+        <a href="#">Presse</a>
+        <a href="success-stories.html">Referenzen</a>
       </div>
       <div class="footer-col">
-        <h5 data-i18n="footer_company">Company</h5>
-        <a href="about.html" data-i18n="footer_about">About NovaTerra</a>
-        <a href="success-stories.html" data-i18n="footer_stories">Success Stories</a>
-        <a href="piper-faq.html" data-i18n="footer_faq">FAQ &amp; Support</a>
+        <h5>Kontakt</h5>
+        <a href="mailto:info@vogler-packtech.de">info@vogler-packtech.de</a>
+        <a href="mailto:support@vogler-packtech.de">support@vogler-packtech.de</a>
+        <a href="tel:+4971219300">+49 7121 930-0</a>
+        <a href="#">Standorte</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p data-i18n="footer_copy">© 2025 NovaTerra GmbH · Stuttgart, Germany</p>
+      <p>&copy; 2026 Vogler Packtech GmbH. Alle Rechte vorbehalten.</p>
       <div class="footer-bottom-links">
-        <a href="#" data-i18n="footer_privacy">Privacy</a>
-        <a href="#" data-i18n="footer_imprint">Imprint</a>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">AGB</a>
       </div>
     </div>
   </footer>
 
-  <script src="lang.js"></script>
+  <script>
+    // Highlight active sidebar nav item on scroll
+    const groups = document.querySelectorAll('.faq-group');
+    const navItems = document.querySelectorAll('.faq-nav-item');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navItems.forEach(item => {
+            item.classList.toggle('active', item.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    groups.forEach(g => observer.observe(g));
+  </script>
+
 </body>
 </html>
