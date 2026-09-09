@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Brauerei Ketterer · Vogler Packtech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #e8e5e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide {
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .top-bar {
+    width: 100%;
+    height: 4px;
+    background: #00636e;
+    flex-shrink: 0;
+  }
+  .panels {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  .left-panel {
+    width: 55%;
+    background: #ffffff;
+    padding: 44px 48px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .right-panel {
+    width: 45%;
+    background: #f5f4f0;
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #161412;
+  }
+  .logo-wordmark span { color: #00636e; }
+  .logo-sub {
+    font-size: 10px;
+    color: #8c8378;
+    margin-top: 2px;
+    line-height: 1;
+  }
+
+  .industry-tag {
+    display: inline-block;
+    background: #e0f2f4;
+    color: #00636e;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin-top: 18px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #161412;
+    line-height: 1.2;
+    margin-top: 12px;
+  }
+  .story-text {
+    font-size: 14px;
+    color: #5c5750;
+    line-height: 1.75;
+    margin-top: 14px;
+  }
+  .story-text p + p {
+    margin-top: 10px;
+  }
+  blockquote {
+    border-left: 3px solid #00636e;
+    padding-left: 16px;
+    margin-top: 18px;
+  }
+  .quote-text {
+    font-size: 14px;
+    color: #2a2722;
+    line-height: 1.7;
+  }
+  .quote-cite {
+    font-size: 12px;
+    color: #8c8378;
+    margin-top: 8px;
+    display: block;
+  }
+  .products-used {
+    font-size: 12px;
+    color: #8c8378;
+    margin-top: 16px;
+  }
+
+  /* Right panel */
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #00636e;
+  }
+  .result-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .result-card {
+    background: #ffffff;
+    border: 1px solid #e2ddd6;
+    padding: 14px 18px;
+  }
+  .result-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #00636e;
+    line-height: 1;
+  }
+  .result-label {
+    font-size: 12px;
+    color: #5c5750;
+    margin-top: 4px;
+  }
+  .followup-card {
+    background: #ffffff;
+    border: 1px solid #e2ddd6;
+    padding: 12px 16px;
+    margin-top: auto;
+    font-size: 12px;
+    color: #5c5750;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="top-bar"></div>
+  <div class="panels">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="34" height="34" rx="4" fill="#004d57"/>
+          <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
+        </svg>
+        <div class="logo-text">
+          <div class="logo-wordmark">Vogler<span> Packtech</span></div>
+          <div class="logo-sub">Abfüllung &amp; Prozesstechnik</div>
+        </div>
+      </div>
+
+      <span class="industry-tag">Food &amp; Beverage · Germany</span>
+      <h2>Brauerei Ketterer GmbH: OEE from 74% to 91% after replacing the filling line.</h2>
+
+      <div class="story-text">
+        <p>Brauerei Ketterer operates a bottling line for lager and wheat beer in the Black Forest region. The previous line averaged 74% OEE. Format changeovers to the 0.5 l wheat beer container took 22 minutes and required four operators.</p>
+        <p>After installing the VarioFill HP-X with LineView integration and PredictCare sensor kit, the first full shift ran at 89% OEE. PredictCare flagged three imminent failures on filling valves and rotary joints in the first twelve months — all resolved during planned maintenance windows.</p>
+      </div>
+
+      <blockquote>
+        <p class="quote-text">"The 22-minute changeover to wheat beer cost us every Monday morning for years. We are now at 5.5 minutes with no additional operators. That changed our entire weekly planning."</p>
+        <cite class="quote-cite">Tobias Renn, Plant Manager, Brauerei Ketterer GmbH &amp; Co. KG</cite>
+      </blockquote>
+
+      <p class="products-used">Products: VarioFill HP-X · LineView · PredictCare</p>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <div class="section-label">Results after 6 months</div>
+
+      <div class="result-cards">
+        <div class="result-card">
+          <div class="result-number">91 %</div>
+          <div class="result-label">OEE (up from 74%)</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">5.5 min</div>
+          <div class="result-label">Format changeover (down from 22 min)</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">–2.8 %</div>
+          <div class="result-label">Reject rate on the carbonation line</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">11 months</div>
+          <div class="result-label">Full payback on machine, software and commissioning</div>
+        </div>
+      </div>
+
+      <div class="followup-card">
+        Would an ROI estimate based on your line be useful? I can put one together in the chat.
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

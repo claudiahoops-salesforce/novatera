@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>VarioFill HP-X · Vogler Packtech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #e8e5e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide {
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .top-bar {
+    width: 100%;
+    height: 4px;
+    background: #00636e;
+    flex-shrink: 0;
+  }
+  .panels {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  .left-panel {
+    width: 52%;
+    background: #ffffff;
+    padding: 44px 48px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .right-panel {
+    width: 48%;
+    background: #f5f4f0;
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #161412;
+  }
+  .logo-wordmark span { color: #00636e; }
+  .logo-sub {
+    font-size: 10px;
+    color: #8c8378;
+    margin-top: 2px;
+    line-height: 1;
+  }
+
+  /* Left content */
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #00636e;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #161412;
+    line-height: 1.15;
+    margin-top: 10px;
+  }
+  .sub {
+    font-size: 14px;
+    color: #5c5750;
+    line-height: 1.7;
+    margin-top: 12px;
+  }
+
+  /* Spec grid */
+  .spec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .spec-card {
+    background: #ffffff;
+    border: 1px solid #e2ddd6;
+    border-top: 3px solid #00636e;
+    padding: 14px 18px;
+  }
+  .spec-number {
+    font-size: 22px;
+    font-weight: 700;
+    color: #161412;
+    line-height: 1;
+  }
+  .spec-label {
+    font-size: 11px;
+    color: #8c8378;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+  .footer-text {
+    font-size: 11px;
+    color: #8c8378;
+    margin-top: 16px;
+  }
+
+  /* Right panel */
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #00636e;
+  }
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 13px;
+  }
+  .comparison-table th {
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+  }
+  .comparison-table th.before-col {
+    background: #f5f4f0;
+    color: #8c8378;
+  }
+  .comparison-table th.after-col {
+    background: #e0f2f4;
+    color: #00636e;
+  }
+  .comparison-table td {
+    padding: 9px 12px;
+    border-top: 1px solid #e2ddd6;
+    color: #2a2722;
+    font-size: 13px;
+  }
+  .comparison-table td.row-label {
+    color: #5c5750;
+    font-size: 12px;
+  }
+  .comparison-table td.after-val {
+    color: #00636e;
+    font-weight: 600;
+  }
+
+  .note-box {
+    background: #e0f2f4;
+    border-left: 3px solid #00636e;
+    padding: 12px 16px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #2a2722;
+    line-height: 1.6;
+  }
+  .followup-card {
+    background: #ffffff;
+    border: 1px solid #e2ddd6;
+    padding: 12px 16px;
+    margin-top: auto;
+    font-size: 12px;
+    color: #5c5750;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="top-bar"></div>
+  <div class="panels">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="34" height="34" rx="4" fill="#004d57"/>
+          <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
+        </svg>
+        <div class="logo-text">
+          <div class="logo-wordmark">Vogler<span> Packtech</span></div>
+          <div class="logo-sub">Abfüllung &amp; Prozesstechnik</div>
+        </div>
+      </div>
+
+      <div class="eyebrow">VarioFill HP-X</div>
+      <h2>Format change in under 8 minutes. At 600 cycles per minute.</h2>
+      <p class="sub">The HP-X is Vogler Packtech's high-speed liquid filling system for aqueous and low-viscosity products. Volumetric flow measurement, FDA-compliant contact materials, CIP/SIP throughout.</p>
+
+      <div class="spec-grid">
+        <div class="spec-card">
+          <div class="spec-number">600</div>
+          <div class="spec-label">cycles per minute</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-number">&lt; 8 min</div>
+          <div class="spec-label">tool-free format change</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-number">±0.3 %</div>
+          <div class="spec-label">dosing accuracy</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-number">10 ml – 5 l</div>
+          <div class="spec-label">container range</div>
+        </div>
+      </div>
+
+      <p class="footer-text">Contact materials: 1.4404 / PTFE · CIP/SIP · FDA 21 CFR</p>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <div class="section-label">How it compares</div>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th style="background:#f5f4f0; color:#8c8378;"></th>
+            <th class="before-col">Before</th>
+            <th class="after-col">With HP-X</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="row-label">Format changeover</td>
+            <td>22–28 min</td>
+            <td class="after-val">&lt; 8 min</td>
+          </tr>
+          <tr>
+            <td class="row-label">Operators required</td>
+            <td>3</td>
+            <td class="after-val">1</td>
+          </tr>
+          <tr>
+            <td class="row-label">Dosing accuracy</td>
+            <td>±1.2 %</td>
+            <td class="after-val">±0.3 %</td>
+          </tr>
+          <tr>
+            <td class="row-label">OEE (typical)</td>
+            <td>74 %</td>
+            <td class="after-val">91 %</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note-box">
+        The HP-X uses coded format parts — the control system verifies the correct format is installed before allowing production to start.
+      </div>
+
+      <div class="followup-card">
+        Want to see the HP-X running in a dairy line? I can show you the Ketterer case study.
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

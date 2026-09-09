@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>ROI Estimate · Vogler Packtech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #e8e5e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide {
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .top-bar {
+    width: 100%;
+    height: 4px;
+    background: #00636e;
+    flex-shrink: 0;
+  }
+  .panels {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  .left-panel {
+    width: 52%;
+    background: #ffffff;
+    padding: 44px 48px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .right-panel {
+    width: 48%;
+    background: #f5f4f0;
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-wordmark {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #161412;
+  }
+  .logo-wordmark span { color: #00636e; }
+  .logo-sub {
+    font-size: 10px;
+    color: #8c8378;
+    margin-top: 2px;
+    line-height: 1;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #00636e;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #161412;
+    line-height: 1.15;
+    margin-top: 8px;
+  }
+  .sub {
+    font-size: 13px;
+    color: #8c8378;
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+
+  /* ROI table */
+  .roi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    font-size: 13px;
+  }
+  .roi-table thead th {
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    background: #f5f4f0;
+    color: #5c5750;
+    border-bottom: 1px solid #e2ddd6;
+  }
+  .roi-table tbody td {
+    padding: 9px 12px;
+    border-top: 1px solid #e2ddd6;
+    color: #2a2722;
+    vertical-align: middle;
+  }
+  .roi-table tbody td:first-child {
+    color: #5c5750;
+    font-size: 12px;
+  }
+  .roi-table tbody tr.highlighted td {
+    background: #e0f2f4;
+  }
+  .roi-table tbody tr.highlighted td:first-child {
+    color: #2a2722;
+  }
+  .roi-table tbody tr.highlighted-bold td {
+    background: #e0f2f4;
+    font-weight: 700;
+  }
+  .roi-table tbody tr.highlighted-bold td:first-child {
+    color: #2a2722;
+    font-weight: 700;
+  }
+  .footnote {
+    font-size: 11px;
+    color: #8c8378;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+
+  /* Right panel */
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #00636e;
+  }
+  .pilot-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 18px;
+  }
+  .pilot-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .pilot-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00636e;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+  .pilot-content {}
+  .pilot-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2a2722;
+    line-height: 1.2;
+  }
+  .pilot-desc {
+    font-size: 12px;
+    color: #5c5750;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: #00636e;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 3px;
+    margin-top: 24px;
+    text-decoration: none;
+    cursor: default;
+  }
+  .cta-note {
+    font-size: 12px;
+    color: #8c8378;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="top-bar"></div>
+  <div class="panels">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="34" height="34" rx="4" fill="#004d57"/>
+          <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
+        </svg>
+        <div class="logo-text">
+          <div class="logo-wordmark">Vogler<span> Packtech</span></div>
+          <div class="logo-sub">Abfüllung &amp; Prozesstechnik</div>
+        </div>
+      </div>
+
+      <div class="eyebrow">ROI Estimate</div>
+      <h2>Your numbers, calculated.</h2>
+      <p class="sub">Based on: 2 unplanned stoppages per month · 3 hours each · EUR 800 per hour line cost</p>
+
+      <table class="roi-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Current</th>
+            <th>With Vogler Packtech</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Unplanned stoppages/year</td>
+            <td>24</td>
+            <td>Target: 0–2</td>
+          </tr>
+          <tr>
+            <td>Cost per stoppage</td>
+            <td>EUR 2,400</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Annual stoppage cost</td>
+            <td>EUR 57,600</td>
+            <td>EUR 0–4,800</td>
+          </tr>
+          <tr>
+            <td>Annual saving</td>
+            <td>—</td>
+            <td>up to EUR 52,800</td>
+          </tr>
+          <tr class="highlighted">
+            <td>LineView Suite licence (Professional)</td>
+            <td>—</td>
+            <td>EUR 21,600/year</td>
+          </tr>
+          <tr class="highlighted-bold">
+            <td>Net annual saving</td>
+            <td>—</td>
+            <td>EUR 31,200</td>
+          </tr>
+          <tr>
+            <td>Estimated payback</td>
+            <td>—</td>
+            <td>7–10 months</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="footnote">Estimate based on inputs provided. Final figures depend on line configuration and integration scope.</p>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <div class="section-label">What's included in the pilot</div>
+
+      <div class="pilot-items">
+        <div class="pilot-item">
+          <div class="pilot-dot"></div>
+          <div class="pilot-content">
+            <div class="pilot-title">LineView Suite on up to 3 machines</div>
+            <div class="pilot-desc">Configured by Vogler engineers. No production downtime during installation.</div>
+          </div>
+        </div>
+        <div class="pilot-item">
+          <div class="pilot-dot"></div>
+          <div class="pilot-content">
+            <div class="pilot-title">30 days of live data</div>
+            <div class="pilot-desc">OEE, stoppages, changeover times — your real numbers.</div>
+          </div>
+        </div>
+        <div class="pilot-item">
+          <div class="pilot-dot"></div>
+          <div class="pilot-content">
+            <div class="pilot-title">PredictCare active from day one</div>
+            <div class="pilot-desc">First predictive alerts typically appear within 7 days.</div>
+          </div>
+        </div>
+        <div class="pilot-item">
+          <div class="pilot-dot"></div>
+          <div class="pilot-content">
+            <div class="pilot-title">ROI report at day 30</div>
+            <div class="pilot-desc">We present the actual data against this estimate. No commitment required.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-button">Start the 30-day pilot</div>
+      <p class="cta-note">No licence fee during the pilot period.</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
