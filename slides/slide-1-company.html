@@ -3,227 +3,210 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1280">
-<title>Vogler Packtech — Company Overview</title>
+<title>Vogler Packtech – Company Overview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: 'Inter', sans-serif;
-    background: #0a1214;
+    background: #f5f4f0;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: 'Inter', sans-serif;
   }
   .slide {
     width: 1280px;
     height: 720px;
-    overflow: hidden;
+    background: #ffffff;
     display: flex;
+    flex-shrink: 0;
+    overflow: hidden;
     position: relative;
-    background: #111a1c;
+    border-radius: 0;
   }
 
   /* LEFT PANEL */
   .panel-left {
-    width: 60%;
-    height: 100%;
-    background: #111a1c;
-    padding: 52px 56px 48px 56px;
+    width: 58%;
+    background: #ffffff;
+    border-right: 1px solid #e2ddd6;
     display: flex;
     flex-direction: column;
+    padding: 40px 48px 32px 48px;
+    position: relative;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+  .logo-text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .logo-wordmark {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #161412;
+  }
+  .logo-wordmark span {
+    color: #00636e;
+  }
+  .logo-sub {
+    font-size: 11px;
+    color: #8c8378;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00636e;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #161412;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+  .sub-text {
+    font-size: 14px;
+    color: #5c5750;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  /* Stat grid */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .stat-card {
+    background: #ffffff;
+    border: 1px solid #e2ddd6;
+    border-top: 3px solid #00636e;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .stat-number {
+    font-size: 26px;
+    font-weight: 700;
+    color: #00636e;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: #5c5750;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  /* Slide number */
+  .slide-num {
+    position: absolute;
+    bottom: 24px;
+    right: 48px;
+    font-size: 11px;
+    color: #8c8378;
+    font-weight: 400;
   }
 
   /* RIGHT PANEL */
   .panel-right {
-    width: 40%;
-    height: 100%;
-    background: #162024;
-    padding: 52px 44px 48px 44px;
+    width: 42%;
+    background: #f5f4f0;
     display: flex;
     flex-direction: column;
-    border-left: 1px solid #1e2e32;
+    padding: 40px 40px 32px 40px;
+  }
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00636e;
+    margin-bottom: 16px;
   }
 
-  /* LOGO */
-  .logo {
+  /* Product rows */
+  .product-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-row {
+    border-bottom: 1px solid #e2ddd6;
+    padding: 14px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .product-row:first-child {
+    border-top: 1px solid #e2ddd6;
+  }
+  .product-name-row {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 36px;
-  }
-  .logo-wordmark {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    gap: 1px;
-  }
-  .logo-vogler {
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .logo-packtech {
-    font-size: 14px;
-    font-weight: 700;
-    color: #00636e;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  /* EYEBROW */
-  .eyebrow {
-    font-size: 11px;
-    font-weight: 600;
-    color: #7ecdd4;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-  }
-
-  /* HEADING */
-  .heading {
-    font-size: 38px;
-    font-weight: 800;
-    color: #ffffff;
-    line-height: 1.12;
-    letter-spacing: -0.025em;
-    margin-bottom: 20px;
-  }
-
-  /* SUBTEXT */
-  .subtext {
-    font-size: 14px;
-    font-weight: 400;
-    color: #7a9ea4;
-    line-height: 1.7;
-    max-width: 430px;
-    margin-bottom: 36px;
-  }
-
-  /* STAT GRID */
-  .stat-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 10px;
-    max-width: 450px;
   }
-  .stat-box {
-    background: #162024;
-    border: 1px solid #1e2e32;
-    padding: 18px 20px 16px 20px;
-  }
-  .stat-value {
-    font-size: 28px;
-    font-weight: 800;
-    color: #7ecdd4;
-    letter-spacing: -0.03em;
-    line-height: 1;
-    margin-bottom: 5px;
-  }
-  .stat-label {
-    font-size: 11px;
-    font-weight: 500;
-    color: #4a6e74;
-    letter-spacing: 0.03em;
-    line-height: 1.35;
-  }
-
-  /* RIGHT PANEL HEADER */
-  .right-label {
-    font-size: 10px;
-    font-weight: 600;
-    color: #3a5a60;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-
-  /* PRODUCT LINES */
-  .product-lines {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-bottom: 20px;
-  }
-  .product-line {
-    padding: 15px 0;
-    border-bottom: 1px solid #1e2e32;
-  }
-  .product-line:first-child {
-    border-top: 1px solid #1e2e32;
-  }
-  .product-line-name {
+  .product-name {
     font-size: 14px;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 3px;
+    color: #161412;
   }
-  .product-line-cat {
+  .product-category {
     font-size: 10px;
     font-weight: 600;
     color: #00636e;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-bottom: 6px;
   }
-  .product-line-desc {
+  .product-desc {
     font-size: 12px;
-    font-weight: 400;
-    color: #4a6e74;
-    line-height: 1.55;
+    color: #5c5750;
+    line-height: 1.6;
   }
 
-  /* SOFTWARE BLOCK */
+  /* Software block */
   .software-block {
-    background: #0d1618;
-    border-left: 3px solid #00636e;
-    padding: 13px 16px;
-    margin-bottom: 22px;
+    border-left: 3px solid #004d57;
+    background: #e0f2f4;
+    padding: 14px 16px;
+    margin-top: 18px;
   }
   .software-label {
     font-size: 10px;
     font-weight: 600;
-    color: #3a5a60;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.10em;
     text-transform: uppercase;
+    color: #004d57;
     margin-bottom: 5px;
   }
   .software-text {
     font-size: 12px;
+    color: #2a2722;
+    line-height: 1.6;
+  }
+
+  /* Locations footer */
+  .locations {
+    margin-top: 16px;
+    font-size: 11px;
+    color: #8c8378;
     font-weight: 400;
-    color: #7a9ea4;
-    line-height: 1.5;
-  }
-  .software-name {
-    color: #7ecdd4;
-    font-weight: 600;
-  }
-
-  /* LOCATIONS */
-  .locations-strip {
-    font-size: 11px;
-    font-weight: 500;
-    color: #3a5a60;
-    letter-spacing: 0.04em;
-  }
-  .locations-strip .loc {
-    color: #5a8088;
-  }
-
-  /* SLIDE NUMBER */
-  .slide-number {
-    position: absolute;
-    bottom: 26px;
-    right: 44px;
-    font-size: 11px;
-    font-weight: 500;
-    color: #2a4a50;
-    letter-spacing: 0.08em;
   }
 </style>
 </head>
@@ -232,78 +215,80 @@
 
   <!-- LEFT PANEL -->
   <div class="panel-left">
-
     <div class="logo">
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="2" fill="#004d57"/>
-        <polyline points="4,26 9,16 14,22 19,12 24,20 29,10 34,18" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <rect x="14" y="31" width="12" height="4" rx="1" fill="#00636e"/>
+      <svg width="36" height="36" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="34" height="34" rx="4" fill="#004d57"/>
+        <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
       </svg>
-      <div class="logo-wordmark">
-        <span class="logo-vogler">Vogler</span>
-        <span class="logo-packtech">Packtech</span>
+      <div class="logo-text-wrap">
+        <div class="logo-wordmark">Vogler<span> Packtech</span></div>
+        <div class="logo-sub">Abfüllung &amp; Prozesstechnik</div>
       </div>
     </div>
 
     <div class="eyebrow">Company Overview</div>
-    <h2 class="heading">Packaging machinery<br>built to run.</h2>
-    <p class="subtext">Founded 1962 in Reutlingen. Family-owned, third generation. No quarterly pressures, no outsourced safety components.</p>
+    <h2>Packaging machinery built to run.</h2>
+    <p class="sub-text">Founded 1962 in Reutlingen. Family-owned, third generation. Development and manufacturing under one roof.</p>
 
     <div class="stat-grid">
-      <div class="stat-box">
-        <div class="stat-value">1962</div>
-        <div class="stat-label">Founded Reutlingen</div>
+      <div class="stat-card">
+        <div class="stat-number">1962</div>
+        <div class="stat-label">Founded in Reutlingen</div>
       </div>
-      <div class="stat-box">
-        <div class="stat-value">2,800+</div>
+      <div class="stat-card">
+        <div class="stat-number">2,800+</div>
         <div class="stat-label">Machines installed worldwide</div>
       </div>
-      <div class="stat-box">
-        <div class="stat-value">44</div>
+      <div class="stat-card">
+        <div class="stat-number">44</div>
         <div class="stat-label">Countries with active customers</div>
       </div>
-      <div class="stat-box">
-        <div class="stat-value">14%</div>
+      <div class="stat-card">
+        <div class="stat-number">14%</div>
         <div class="stat-label">Revenue invested in R&amp;D</div>
       </div>
     </div>
 
+    <div class="slide-num">1 / 6</div>
   </div>
 
   <!-- RIGHT PANEL -->
   <div class="panel-right">
-    <div class="right-label">Product Lines</div>
+    <div class="section-label">Product Lines</div>
 
-    <div class="product-lines">
-      <div class="product-line">
-        <div class="product-line-name">VarioFill</div>
-        <div class="product-line-cat">Filling &amp; Dosing</div>
-        <div class="product-line-desc">Liquid and powder. Up to 600 cycles/min. Tool-free format change under 8 minutes.</div>
+    <div class="product-list">
+      <div class="product-row">
+        <div class="product-name-row">
+          <span class="product-name">VarioFill</span>
+          <span class="product-category">Filling &amp; Dosing</span>
+        </div>
+        <div class="product-desc">Up to 600 cycles/min. Tool-free format change under 8 minutes.</div>
       </div>
-      <div class="product-line">
-        <div class="product-line-name">FlexCase</div>
-        <div class="product-line-cat">Robotic Cartoning</div>
-        <div class="product-line-desc">Up to 280 cartons/min. 6-axis SCARA robot, tool-free format change in under 12 minutes.</div>
+      <div class="product-row">
+        <div class="product-name-row">
+          <span class="product-name">FlexCase</span>
+          <span class="product-category">Robotic Cartoning</span>
+        </div>
+        <div class="product-desc">Up to 280 cartons/min. 6-axis SCARA robot.</div>
       </div>
-      <div class="product-line">
-        <div class="product-line-name">PureMix</div>
-        <div class="product-line-cat">Process Technology</div>
-        <div class="product-line-desc">Hygienic process vessels, EHEDG-certified. 200 l to 15,000 l. Full CIP/SIP capability.</div>
+      <div class="product-row">
+        <div class="product-name-row">
+          <span class="product-name">PureMix</span>
+          <span class="product-category">Process Technology</span>
+        </div>
+        <div class="product-desc">EHEDG-certified. 200 l to 15,000 l. Full CIP/SIP.</div>
       </div>
     </div>
 
     <div class="software-block">
       <div class="software-label">Software</div>
-      <div class="software-text"><span class="software-name">LineView Suite:</span> OEE monitoring, predictive maintenance, production execution</div>
+      <div class="software-text">LineView Suite: OEE monitoring, predictive maintenance, production execution</div>
     </div>
 
-    <div class="locations-strip">
-      <span class="loc">Reutlingen (HQ)</span> &nbsp;·&nbsp; <span class="loc">Kraków</span> &nbsp;·&nbsp; <span class="loc">Charlotte, NC</span>
-    </div>
-
+    <div class="locations">Reutlingen (HQ) &middot; Krakow &middot; Charlotte, NC</div>
   </div>
 
-  <div class="slide-number">1 / 6</div>
 </div>
 </body>
 </html>

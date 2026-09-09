@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1280">
-<title>Vogler Packtech — Customer Results</title>
+<title>Vogler Packtech -- Customer Results</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: 'Inter', sans-serif;
-    background: #e8e7e3;
+    background: #e2ddd6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,294 +27,299 @@
     background: #f5f4f0;
   }
 
-  /* TOP AREA */
+  /* TOP STRIP */
   .slide-top {
-    padding: 40px 60px 0 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2ddd6;
+    padding: 30px 56px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-
-  /* LOGO */
+  .top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
   .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 22px;
+    gap: 10px;
+    margin-bottom: 10px;
   }
-  .logo-wordmark {
+  .logo-text {
     display: flex;
     flex-direction: column;
+    gap: 2px;
+  }
+  .logo-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #161412;
     line-height: 1;
-    gap: 1px;
+    letter-spacing: -0.01em;
   }
-  .logo-vogler {
-    font-size: 14px;
-    font-weight: 700;
-    color: #1a1a1a;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  .logo-name .packtech { color: #00636e; }
+  .logo-sub {
+    font-size: 11px;
+    font-weight: 400;
+    color: #8c8378;
+    letter-spacing: 0.02em;
   }
-  .logo-packtech {
-    font-size: 14px;
-    font-weight: 700;
-    color: #00636e;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
   .eyebrow {
     font-size: 11px;
     font-weight: 600;
     color: #00636e;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   .heading {
-    font-size: 26px;
-    font-weight: 800;
-    color: #1a1a1a;
-    line-height: 1.15;
+    font-size: 28px;
+    font-weight: 700;
+    color: #161412;
+    line-height: 1.18;
     letter-spacing: -0.02em;
   }
-
-  /* CARDS GRID */
-  .cards-grid {
-    flex: 1;
-    padding: 20px 60px 0 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
+  .top-right {
+    text-align: right;
+    flex-shrink: 0;
   }
-
-  .result-card {
-    background: #ffffff;
-    border-top: 3px solid #00636e;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-    padding: 18px 22px 16px 22px;
-    display: flex;
-    flex-direction: column;
-  }
-  .card-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 12px;
-  }
-  .card-company {
-    font-size: 13px;
-    font-weight: 800;
-    color: #1a1a1a;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-    max-width: 200px;
-  }
-  .card-tag {
-    font-size: 9px;
+  .summary-val {
+    font-size: 36px;
     font-weight: 700;
     color: #00636e;
-    background: #eaf6f7;
-    border: 1px solid #b8e2e6;
-    padding: 3px 8px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    white-space: nowrap;
-    flex-shrink: 0;
-    margin-left: 10px;
-    align-self: flex-start;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 4px;
   }
-
-  .metrics {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    flex: 1;
-  }
-  .metric-row {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-  }
-  .metric-val {
-    font-size: 15px;
-    font-weight: 800;
-    color: #00636e;
-    letter-spacing: -0.02em;
-    white-space: nowrap;
-    flex-shrink: 0;
-    min-width: 90px;
-  }
-  .metric-label {
-    font-size: 11.5px;
+  .summary-label {
+    font-size: 12px;
     font-weight: 400;
-    color: #666;
-    line-height: 1.35;
-  }
-
-  .card-product {
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid #e8e7e3;
-    font-size: 10px;
-    font-weight: 500;
-    color: #aaa;
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-  }
-  .card-product span {
-    color: #00636e;
-    font-weight: 600;
-  }
-
-  /* BOTTOM STRIP */
-  .bottom-strip {
-    height: 46px;
-    background: #111a1c;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    padding: 0 60px;
-    margin-top: 16px;
-  }
-  .bottom-strip-text {
-    font-size: 12.5px;
-    font-weight: 500;
-    color: #7ecdd4;
+    color: #8c8378;
     letter-spacing: 0.01em;
   }
 
   /* SLIDE NUMBER */
   .slide-number {
     position: absolute;
-    bottom: 13px;
-    right: 28px;
+    top: 32px;
+    right: 56px;
     font-size: 11px;
     font-weight: 500;
-    color: rgba(255,255,255,0.3);
+    color: #8c8378;
     letter-spacing: 0.08em;
+  }
+
+  /* CARD GRID */
+  .cards-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    background: #f5f4f0;
+  }
+
+  .card {
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .card.white { background: #ffffff; }
+  .card.off-white { background: #f5f4f0; }
+
+  .card-top-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #00636e;
+  }
+
+  .card-industry {
+    font-size: 10px;
+    font-weight: 600;
+    color: #00636e;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .card-company {
+    font-size: 15px;
+    font-weight: 700;
+    color: #161412;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+  }
+  .result-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .result-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8c8378;
+    line-height: 1.4;
+    flex-shrink: 0;
+  }
+  .result-val {
+    font-size: 14px;
+    font-weight: 600;
+    color: #161412;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .card-product-tag {
+    margin-top: 14px;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    color: #00636e;
+    background: #e0f2f4;
+    padding: 4px 10px;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    align-self: flex-start;
   }
 </style>
 </head>
 <body>
 <div class="slide">
 
+  <!-- TOP STRIP -->
   <div class="slide-top">
-    <div class="logo">
-      <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="2" fill="#004d57"/>
-        <polyline points="4,26 9,16 14,22 19,12 24,20 29,10 34,18" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        <rect x="14" y="31" width="12" height="4" rx="1" fill="#00636e"/>
-      </svg>
-      <div class="logo-wordmark">
-        <span class="logo-vogler">Vogler</span>
-        <span class="logo-packtech">Packtech</span>
+    <div class="top-left">
+      <div class="logo">
+        <svg width="36" height="36" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="34" height="34" rx="4" fill="#004d57"/>
+          <path d="M6 26 L10 14 L14 20 L18 10 L22 18 L26 14 L28 22" stroke="#7ecdd4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="14" y="24" width="6" height="3" rx="1" fill="#00636e"/>
+        </svg>
+        <div class="logo-text">
+          <div class="logo-name"><span>Vogler</span><span class="packtech"> Packtech</span></div>
+          <div class="logo-sub">Abfüllung &amp; Prozesstechnik</div>
+        </div>
       </div>
+      <div class="eyebrow">Customer Results</div>
+      <h2 class="heading">Measured outcomes across four industries.</h2>
     </div>
-    <div class="eyebrow">Customer Results</div>
-    <h2 class="heading">Measured outcomes across four industries.</h2>
-  </div>
-
-  <div class="cards-grid">
-
-    <!-- CARD 1: Brauerei Ketterer -->
-    <div class="result-card">
-      <div class="card-top">
-        <div class="card-company">Brauerei Ketterer GmbH</div>
-        <div class="card-tag">Food/Beverage &nbsp;·&nbsp; Germany</div>
-      </div>
-      <div class="metrics">
-        <div class="metric-row">
-          <div class="metric-val">74% to 91%</div>
-          <div class="metric-label">OEE improvement</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">22 to 5.5 min</div>
-          <div class="metric-label">Changeover time</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">11 months</div>
-          <div class="metric-label">Payback period</div>
-        </div>
-      </div>
-      <div class="card-product">Product: <span>VarioFill HP-X + LineView + PredictCare</span></div>
+    <div class="top-right">
+      <div class="summary-val">9 to 14 months</div>
+      <div class="summary-label">average payback period</div>
     </div>
-
-    <!-- CARD 2: Lohmann Pharma -->
-    <div class="result-card">
-      <div class="card-top">
-        <div class="card-company">Lohmann Pharma Packaging AG</div>
-        <div class="card-tag">Pharma &nbsp;·&nbsp; Switzerland</div>
-      </div>
-      <div class="metrics">
-        <div class="metric-row">
-          <div class="metric-val">40 to 8 min</div>
-          <div class="metric-label">Batch documentation time</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">0</div>
-          <div class="metric-label">Unplanned stoppages in 18 months</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">3 in a row</div>
-          <div class="metric-label">GMP audits passed without findings</div>
-        </div>
-      </div>
-      <div class="card-product">Product: <span>VarioFill PD-60 + FlexCase CR-8 + PackOS + PredictCare</span></div>
-    </div>
-
-    <!-- CARD 3: Vita Cosmetics -->
-    <div class="result-card">
-      <div class="card-top">
-        <div class="card-company">Vita Cosmetics Group</div>
-        <div class="card-tag">Cosmetics &nbsp;·&nbsp; Netherlands</div>
-      </div>
-      <div class="metrics">
-        <div class="metric-row">
-          <div class="metric-val">-91%</div>
-          <div class="metric-label">Mispack rate</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">35 to 9 min</div>
-          <div class="metric-label">Changeover time</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">93%</div>
-          <div class="metric-label">Line availability (company record)</div>
-        </div>
-      </div>
-      <div class="card-product">Product: <span>FlexCase SL-6 + LineView</span></div>
-    </div>
-
-    <!-- CARD 4: Alpenmolkerei -->
-    <div class="result-card">
-      <div class="card-top">
-        <div class="card-company">Alpenmolkerei Berchtesgaden eG</div>
-        <div class="card-tag">Food &nbsp;·&nbsp; Germany</div>
-      </div>
-      <div class="metrics">
-        <div class="metric-row">
-          <div class="metric-val">4.5 to 2.8 h</div>
-          <div class="metric-label">CIP cycle time</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">-34%</div>
-          <div class="metric-label">Water consumption</div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-val">+18%</div>
-          <div class="metric-label">Production availability per shift</div>
-        </div>
-      </div>
-      <div class="card-product">Product: <span>PureMix PM-200 + PredictCare</span></div>
-    </div>
-
-  </div>
-
-  <div class="bottom-strip">
-    <div class="bottom-strip-text">Average payback period across all LineView Suite customers: 9 to 14 months.</div>
   </div>
 
   <div class="slide-number">5 / 6</div>
+
+  <!-- CARD GRID -->
+  <div class="cards-grid">
+
+    <!-- Card 1: Brauerei Ketterer (white) -->
+    <div class="card white">
+      <div class="card-top-border"></div>
+      <div class="card-industry">Food &amp; Beverage &middot; Germany</div>
+      <div class="card-company">Brauerei Ketterer GmbH</div>
+      <div class="results">
+        <div class="result-row">
+          <div class="result-label">OEE</div>
+          <div class="result-val">74% to 91%</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Changeover time</div>
+          <div class="result-val">22 min to 5.5 min</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Payback</div>
+          <div class="result-val">11 months</div>
+        </div>
+      </div>
+      <div class="card-product-tag">VarioFill HP-X + LineView + PredictCare</div>
+    </div>
+
+    <!-- Card 2: Lohmann Pharma (off-white) -->
+    <div class="card off-white">
+      <div class="card-top-border"></div>
+      <div class="card-industry">Pharma &middot; Switzerland</div>
+      <div class="card-company">Lohmann Pharma Packaging AG</div>
+      <div class="results">
+        <div class="result-row">
+          <div class="result-label">Batch documentation</div>
+          <div class="result-val">40 min to 8 min</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">GMP audits without findings</div>
+          <div class="result-val">3 in a row</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Unplanned stoppages</div>
+          <div class="result-val">0 in 18 months</div>
+        </div>
+      </div>
+      <div class="card-product-tag">VarioFill PD-60 + FlexCase CR-8 + PackOS</div>
+    </div>
+
+    <!-- Card 3: Vita Cosmetics (off-white) -->
+    <div class="card off-white">
+      <div class="card-top-border"></div>
+      <div class="card-industry">Cosmetics &middot; Netherlands</div>
+      <div class="card-company">Vita Cosmetics Group</div>
+      <div class="results">
+        <div class="result-row">
+          <div class="result-label">Mispacks</div>
+          <div class="result-val">-91%</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Changeover time</div>
+          <div class="result-val">35 min to 9 min</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Line availability</div>
+          <div class="result-val">93%</div>
+        </div>
+      </div>
+      <div class="card-product-tag">FlexCase SL-6 + LineView</div>
+    </div>
+
+    <!-- Card 4: Alpenmolkerei (white) -->
+    <div class="card white">
+      <div class="card-top-border"></div>
+      <div class="card-industry">Food &middot; Germany</div>
+      <div class="card-company">Alpenmolkerei Berchtesgaden eG</div>
+      <div class="results">
+        <div class="result-row">
+          <div class="result-label">CIP cycle time</div>
+          <div class="result-val">4.5 h to 2.8 h</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Water consumption</div>
+          <div class="result-val">-34%</div>
+        </div>
+        <div class="result-row">
+          <div class="result-label">Production availability per shift</div>
+          <div class="result-val">+18%</div>
+        </div>
+      </div>
+      <div class="card-product-tag">PureMix PM-200 + PredictCare</div>
+    </div>
+
+  </div>
+
 </div>
 </body>
 </html>
