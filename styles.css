@@ -825,8 +825,88 @@ p  { color: var(--text-mid); line-height: 1.75; }
   .cta-band-inner { flex-direction: column; }
   .nav-links { display: none; }
 }
+
+@media (max-width: 768px) {
+  :root { --gutter: 16px; }
+
+  /* Top bar: hide location text, keep right-side links + toggle only */
+  .top-bar > span:first-child { display: none; }
+  .top-bar { justify-content: flex-end; padding: 5px 16px; }
+  .top-bar-right { gap: 16px; }
+
+  /* Nav: remove large logo margin, hide secondary button */
+  .logo { margin-right: auto; }
+  .nav-inner { height: 56px; padding: 0 16px; }
+  .nav-right .btn-secondary { display: none; }
+  .nav-right .btn-primary { padding: 9px 16px; font-size: 13px; }
+
+  /* Hero */
+  .hero { min-height: auto; padding: 56px 16px 48px; }
+  .hero-inner { padding: 0; }
+  .hero h1 { font-size: 26px; }
+  .hero-sub { font-size: 14px; }
+  .hero-actions { flex-direction: column; gap: 10px; }
+  .hero-actions a { text-align: center; }
+
+  /* Product hero */
+  .product-hero { padding: 48px 16px 40px; }
+  .product-hero-inner { padding: 0; }
+  .product-hero-panel { display: none; }
+
+  /* Figures strip */
+  .figures-strip { padding: 32px 16px; }
+  .figures-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .figure-num { font-size: 28px; }
+
+  /* Products / industries / stories */
+  .product-grid { grid-template-columns: 1fr; }
+  .industries-grid { grid-template-columns: 1fr; }
+  .stories-grid { grid-template-columns: 1fr; }
+
+  /* Software section */
+  .sw-inner { padding: 48px 16px; gap: 32px; }
+  .sw-products { gap: 8px; }
+
+  /* Photo banner */
+  .photo-banner { padding: 48px 16px; }
+  .photo-banner-inner h2 { font-size: 22px; }
+
+  /* Story full */
+  .story-full { padding: 48px 16px; }
+  .story-results-panel { margin-top: 0; }
+  .result-row { padding: 16px 0; }
+
+  /* CTA band */
+  .cta-band { padding: 40px 16px; }
+  .cta-band-btns { flex-direction: column; gap: 10px; width: 100%; }
+  .cta-band-btns a { text-align: center; }
+
+  /* Contact section */
+  .contact-section { padding: 56px 16px; }
+
+  /* Footer */
+  .footer-top { grid-template-columns: 1fr; gap: 24px; padding: 40px 16px; }
+  .footer-bottom { padding: 16px; flex-direction: column; gap: 12px; text-align: center; }
+  .footer-bottom-links { justify-content: center; }
+
+  /* FAQ */
+  .faq-hero { padding: 40px 16px; }
+  .faq-content { padding: 32px 16px; }
+
+  /* About */
+  .about-hero { padding: 48px 16px; }
+  .about-section { padding: 40px 16px; }
+  .timeline-item { gap: 16px; }
+  .timeline-year { font-size: 16px; min-width: 40px; }
+
+  /* Machines page sections */
+  #varfill, #flexcase, #puremix { padding: 56px 16px; }
+}
+
 @media (max-width: 600px) {
   .product-grid, .industries-grid, .stories-grid { grid-template-columns: 1fr; }
   .figures-inner { grid-template-columns: 1fr 1fr; }
-  h1 { font-size: 28px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 22px; }
+  .story-full-inner { padding: 0; }
 }
